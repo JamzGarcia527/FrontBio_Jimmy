@@ -1,0 +1,206 @@
+// CardListCandidates
+.layout-default {
+  hr {
+    border-width: 0;
+    background-color: #cbcbcb;
+    block-size: 0.125rem;
+    color: #cbcbcb;
+  }
+
+  .tools {
+    position: absolute;
+    z-index: 1;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+  }
+
+  .v-card-item {
+    padding-block-end: 0;
+  }
+
+  .v-card-title {
+    color: rgba(var(--v-theme-on-background), var(--v-high-emphasis-opacity)) !important;
+    font-weight: 500;
+  }
+
+  .text-subtitle-2 {
+    color: #645f73;
+    font-size: 0.9063rem !important;
+    font-weight: 400;
+    letter-spacing: 0 !important;
+    margin-block-end: 0.0313rem;
+  }
+
+  h2 {
+    color: #adabb3;
+  }
+
+  .caption-1 {
+    color: #706c7e;
+    font-size: 0.6875rem !important;
+    font-weight: 500;
+    margin-block-end: 0.625rem;
+  }
+
+  .caption {
+    color: #706c7e;
+    font-size: 0.6875em !important;
+    font-weight: 500;
+    margin-block-end: 0.0313em;
+    margin-block-start: 10%;
+  }
+
+  .caption-2 {
+    color: #706c7e;
+    font-size: 0.75em !important;
+    font-weight: 500;
+    margin-block-end: 8%;
+  }
+
+  .lcard {
+    background-color: #e6e6e6;
+  }
+
+  .cardn {
+    block-size: 5em;
+  }
+
+  .borders {
+    border-inline-end: 0.1rem solid;
+  }
+
+  .float-left {
+    margin-block-end: -12%;
+    margin-block-start: 5%;
+  }
+
+  .spaced {
+    margin-block-end: -2%;
+  }
+
+  .font {
+    font-size: 75%;
+  }
+
+  .msn {
+    color: rgb(var(--v-theme-primary)) !important;
+    font-size: medium;
+    font-weight: 600;
+  }
+
+  .card-rounded {
+    border-width: 0.125rem;
+    border-style: solid;
+  }
+
+  // Media Query
+  @media screen and (min-width: 150px) and (max-width: 420px) {
+    .imgmq {
+      inline-size: 10%;
+    }
+
+    .v-col-sm-5.v-col-5.pa-2.ma-1.cardn {
+      max-inline-size: 80%;
+    }
+
+    p.caption-2.text-lg-right.fontc {
+      font-size: 0.625rem !important;
+    }
+
+    p.caption-2.font-weight-bold.fontc {
+      font-size: 0.625rem !important;
+    }
+
+    p.caption-1.fontc {
+      font-size: 0.625rem !important;
+    }
+
+    h4.fontc {
+      font-size: 0.625rem !important;
+    }
+  }
+
+  @media screen and (min-width: 420px) and (max-width: 720px) {
+    .imgmq {
+      inline-size: 20%;
+    }
+
+    .v-col-sm-5.v-col-5.pa-2.ma-1.cardn {
+      max-inline-size: 80%;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 720px) {
+    .v-col-sm-5.v-col-5.pa-2.ma-1.cardn {
+      max-inline-size: 90%;
+    }
+
+    p.caption-2.text-lg-right.fontc {
+      font-size: 0.625rem !important;
+    }
+
+    p.caption-2.font-weight-bold.fontc {
+      font-size: 0.625rem !important;
+    }
+
+    p.caption-1.fontc {
+      font-size: 0.625rem !important;
+    }
+
+    h4.fontc {
+      font-size: 0.625rem !important;
+    }
+
+    .mt-n4.me-n16 {
+      margin-block-start: -4.375rem !important;
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 900px) {
+    .v-col-sm-5.v-col-5.pa-2.ma-1.cardn {
+      max-inline-size: 70%;
+    }
+
+    .mt-n4.me-n16 {
+      margin-block-start: -3.125rem !important;
+    }
+
+    p.caption-2.text-lg-right.fontc {
+      font-size: 60% !important;
+    }
+
+    p.caption-2.font-weight-bold.fontc {
+      font-size: 60% !important;
+    }
+
+    h4.fontc {
+      font-size: 70% !important;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .fontc.caption-2 {
+      font-size: 73% !important;
+    }
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1500px) {
+    .mt-n4.me-n16 {
+      margin-inline-start: 20%;
+    }
+
+    .chipm {
+      margin-block-start: -15%;
+    }
+  }
+
+  @media screen and (min-width: 1500px) and (max-width: 1680px) {
+    .mt-n4.me-n16 {
+      margin-inline-start: 3.125rem;
+    }
+
+    .chipm {
+      margin-block-start: -15%;
+    }
+  }
+}

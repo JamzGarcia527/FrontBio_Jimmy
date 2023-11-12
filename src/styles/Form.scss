@@ -1,0 +1,28 @@
+// 👉 Input Outline rounded
+.v-field--variant-outlined {
+  .v-field__outline__start {
+    flex: 0 0 20px !important;
+    border-radius: 25px 0 0 25px !important;
+  }
+
+  .v-field__outline__end {
+    border-radius: 0 25px 25px 0 !important;
+  }
+}
+
+// 👉 input readonly
+.readonly-control.v-input--readonly {
+  .v-input__control {
+    .v-field {
+      border-radius: 25px !important;
+      background-color: #eff2f7;
+    }
+  }
+}
+
+//Campo Obligatorio *
+.v-input.required {
+  .v-label.v-field-label::after {
+    content: " *";
+  }
+}

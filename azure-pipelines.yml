@@ -1,0 +1,55 @@
+# Nombre del pipeline
+name: Despliegue a Azure DevOps
+
+# Disparador del pipeline: se ejecuta cuando se hace un commit en la rama main
+trigger:
+  - main
+
+# Piscina de agentes: especifica el tipo de máquina virtual en la que se ejecutará el pipeline
+pool:
+  vmImage: 'ubuntu-latest'
+
+# Tareas del pipeline
+jobs:
+  # Tarea 1: Construir la aplicación Vue
+  - job: Build
+    displayName: 'Construir la aplicación Vue'
+    steps:
+      # Clonar el repositorio
+      - checkout: self
+      
+      # Instalar dependencias
+      - task: NodeTool@0
+        inputs:
+          versionSpec: '18.x'
+        displayName: 'Instalar Node.js'
+      - run: npm install
+        displayName: 'Instalar dependencias'
+
+      # Construir la aplicación
+      - run: npm run build
+        displayName: 'Construir aplicación'
+
+  # Tarea 2: Desplegar la aplicación a Azure DevOps
+  - job: Deploy
+    displayName: 'Desplegar aplicación a Azure DevOps'
+    dependsOn: Build
+    steps:
+      # Publicar el directorio de construcción
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'
+        displayName: 'Publicar artefactos'
+
+      # Configurar la conexión a Azure DevOps
+      - task: AzureWebApp@1
+        inputs:
+          azureSubscription: 'Nombre-de-la-conexión-a-Azure'
+          appType: 'webAppLinux'
+          appName: 'Nombre-de-la-aplicación-en-Azure'
+          package: '$(Build.ArtifactStagingDirectory)/drop'
+          runtimeStack: 'NODE|18-lts'
+          startUpCommand: 'npm run dev'
+        displayName: 'Desplegar en Azure'

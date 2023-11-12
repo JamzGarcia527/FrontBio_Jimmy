@@ -1,0 +1,87 @@
+.layout-vertical-nav {
+  background-color: rgb(var(--v-theme-surface));
+  box-shadow: 6px 3px 24px -4px rgb(219 219 219);
+
+  .nav-link > :first-child,
+  .nav-group > :first-child {
+    block-size: inherit !important;
+    padding-block: 0.5rem !important;
+    white-space: inherit !important;
+  }
+
+  .nav-group {
+    .nav-group-label {
+      background-color: #f3f3f3;
+    }
+
+    .nav-item-icon {
+      color: #003057;
+    }
+
+    .nav-item-title {
+      color: #003057;
+      font-size: 0.75rem;
+      font-weight: 700;
+      white-space: inherit !important;
+    }
+  }
+
+  .nav-link {
+    .nav-item-icon {
+      color: #003057;
+    }
+
+    .nav-item-title {
+      color: #003057;
+      font-size: 0.75rem;
+      font-weight: 400;
+      white-space: inherit !important;
+    }
+  }
+}
+
+.layout-navbar {
+  .navbar-content-container {
+    background-color: rgb(var(--v-theme-surface)) !important;
+    block-size: 4.5rem;
+    box-shadow: 6px 3px 24px -4px rgb(219 219 219) !important;
+  }
+}
+
+.img-navbar > img {
+  inline-size: auto !important;
+}
+
+.layout-content-width-boxed.layout-wrapper.layout-nav-type-vertical .layout-navbar,
+.layout-content-width-boxed.layout-wrapper.layout-nav-type-vertical .layout-footer {
+  inline-size: 100%;
+  margin-inline: auto;
+  max-inline-size: 100%;
+}
+
+.nav-header {
+  margin: auto;
+}
+
+.layout-nav-type-vertical .layout-vertical-nav .nav-header .app-logo {
+  margin: auto;
+}
+
+/* Layout */
+
+.layout-wrapper.layout-nav-type-vertical:not(.layout-overlay-nav) .layout-content-wrapper {
+  background-color: #d6d6d6;
+  background-image: linear-gradient(0deg, #979797 0%, #f3f3f3 30%);
+}
+
+.layout-wrapper.layout-nav-type-vertical .layout-navbar.navbar-blur::after {
+  background: none;
+}
+
+.layout-horizontal-nav .nav-link:not(.sub-item) a.router-link-active,
+.layout-horizontal-nav .nav-group:not(.sub-item).active > .popper-triggerer > .nav-group-label,
+.layout-nav-type-vertical .layout-vertical-nav .nav-link > .router-link-exact-active {
+  background: #00f5e8 !important;
+  color: #003057 !important;
+  font-weight: 800;
+}

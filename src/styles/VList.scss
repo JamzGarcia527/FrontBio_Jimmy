@@ -1,0 +1,15 @@
+.v-list.caption {
+  .v-list-item {
+    font-size: 0.75rem;
+    min-block-size: fit-content;
+    padding-block: 0;
+
+    .v-list-item__prepend > .v-icon {
+      margin-inline-end: 0.5rem;
+    }
+
+    .v-list-item-title {
+      font-size: 0.75rem;
+    }
+  }
+}

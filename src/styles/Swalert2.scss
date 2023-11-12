@@ -1,0 +1,25 @@
+.swal2-container {
+  z-index: 99999 !important;
+}
+
+.swal2-popup {
+  border-radius: 25px !important;
+}
+
+.swal2-confirm.bg-primary {
+  background: rgb(0, 45, 85) !important;
+  color: rgb(255, 255, 255) !important;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(0, 45, 85, 50%) !important;
+  }
+}
+
+.swal2-confirm.bg-error {
+  background: rgb(234, 84, 85) !important;
+  color: rgb(255, 255, 255) !important;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(234, 84, 85, 50%) !important;
+  }
+}

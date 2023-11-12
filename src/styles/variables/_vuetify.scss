@@ -1,0 +1,10 @@
+// ❗ Path must be relative
+// @forward "../../@core/scss/template/libs/vuetify/variables";
+/* stylelint-disable-next-line max-line-length */
+$font-family-custom: "Poppins",sans-serif,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+// ℹ️ Remove above import and uncomment below to override core variables.
+@forward "../../@core/scss/template/libs/vuetify/variables" with (
+  $body-font-family: $font-family-custom !default,
+  $border-radius-root: 6px !default,
+);

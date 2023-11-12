@@ -1,0 +1,2005 @@
+{
+  "auth": {
+    "page_title": "Bio-Time Manager",
+    "page_subtitle": "Registro de actividades",
+    "login": "Iniciar Sesión",
+    "username": "Usuario",
+    "password": "Contraseña",
+    "email": "Correo Electrónico",
+    "forgot_password": "¿Olvidó su contraseña?",
+    "request_password": "Solicitar Contraseña",
+    "restore_password": "Restablecer",
+    "logout": "Cerrar Sesión",
+    "new_password": "Nueva Contraseña",
+    "repeat_new_Password": "Repita la nueva Contraseña",
+    "temporal_password": "Contraseña Temporal",
+    "current_password": "Contraseña actual",
+    "keep": "Guardar",
+    "cancel": "Cancelar",
+    "change_password": "Cambio de Contraseña"
+  },
+  "emulate_user": {
+    "btn_emulate": "Emulación",
+    "logout": "Terminar emulación",
+    "form": {
+      "title": "Emular Usuario",
+      "username": "Usuario",
+      "username_help": "Ingrese aquí el usuario que desea emular.",
+      "btn_start": "Emular"
+    }
+  },
+  "common": {
+    "filter": "Filtro",
+    "select_one_option": "Seleccione una opción",
+    "all":"Todos",
+    "select_write_option": "Seleccione o Escriba",
+    "select_type_approve": "Seleccione un tipo de aprobación",
+    "all_option": "Todos",
+    "next": "Continuar",
+    "divipole": "Divipole",
+    "corporation": "Corporación/Cargo",
+    "circunscription": "Circunscripción",
+    "department": "Departamento",
+    "municipality": "Municipio",
+    "commune": "Comuna/Localidad/Corregimiento",
+    "blank_vote_promoter": "Promotor Voto en Blanco",
+    "grouping_political_type": "Tipo de Agrupación Política",
+    "grouping_political_name": "Nombre de la Agrupación Política",
+    "inscription_type": "Tipo de inscripción",
+    "letter_type": "Tipo de Carta a Cargar",
+    "search": "Buscar",
+    "visualise": "Visualizar",
+    "consult": "Consultar",
+    "download_form": "Descargar Documento",
+    "btn_cancelar": "Cancelar",
+    "btn_reset": "Limpiar",
+    "btn_delete": "Eliminar",
+    "btn_submit": "Guardar",
+    "btn_upload": "Cargar",
+    "btn_close": "Cerrar",
+    "btn_download": "Descargar",
+    "btn_edit": "Editar",
+    "btn_active": "Activar",
+    "btn_inactive": "Inactivar",
+    "btn_create_request": "Crear solicitud",
+    "btn_export": "Exportar",
+    "btn_export_excel": "XLS",
+    "btn_export_csv": "CSV",
+    "btn_export_pdf": "PDF",
+    "not_operation": "No es posible realizar la operación",
+    "generate_file": "Generar Archivo .XLS",
+    "generate_file_sin": "Generar Archivo",
+    "download_file": "Descargar Archivo",
+    "code_grouping_political": "Código de la Agrupación",
+    "with_personage": "Con Personería",
+    "load_logo_or_symbol": "Carga Logo o Símbolo",
+    "empty_table": "No hay registros",
+    "name": "Nombre",
+    "address": "Dirección",
+    "celular_phone": "Número Celular",
+    "phone": "Número de Teléfono Fijo",
+    "select_candidates": "Seleccione Candidato",
+    "code": "Código",
+    "correct": "Correcto",
+    "home": "Inicio",
+    "date_trans": "Fecha de la Transacción",
+    "code_corporation": "Código Corporación",
+    "description_corporation": "Descripción Corporación",
+    "code_circunscription": "Código Circunscripción",
+    "description_circunscription": "Descripción Circunscripción",
+    "type": "Tipo",
+    "logo": "Logo o Símbolo",
+    "close_modal": "Cerrar",
+    "E6_Candidates": "Candidatos E6",
+    "E7_Candidates": "Candidatos E7",
+    "numberLists": "Cantidad de Listas",
+    "upload": {
+      "file_max_size": "Tamaño máximo de archivo {limit}",
+      "file_types": "Tipo de archivo soportado {type}"
+    },
+    "actions": "Acciones",
+    "resend": "Reenviar"
+  },
+  "notes": {
+    "dialog_title": "Notas Aclaratorias",
+    "accept_terms_and_conditions": "Aceptar términos y condiciones"
+  },
+  "preinscription": {
+    "info_grouping_political": "Información de la Agrupación Política",
+    "grouping_political": {
+      "vote_option": {
+        "label": "Opción de Voto",
+        "preferent": "Preferente",
+        "unpreferent": "No Preferente"
+      },
+      "name": "Nombre de la Agrupación Política",
+      "address": "Dirección de Correspondencia",
+      "email": "Correo Electrónico Principal",
+      "alternative_email": "Correo Electrónico Alterno",
+      "celular_phone": "Celular",
+      "phone": "Teléfono fijo",
+      "state": "Estado",
+      "dialog_info": "Número de Cuenta Única de la Campaña Electoral",
+      "dialog_info_g": " Ingrese Información de Gerente de Campaña",
+      "info_counter": "Información Contador",
+      "number_account": "Número de Cuenta",
+      "financial_entity": "Entidad Financiera",
+      "accountType": "Tipo de Cuenta",
+      "names_surnames": "Nombres y Apellidos",
+      "dni": "Número de Cédula",
+      "professional_card": "Tarjeta Profesional No.",
+      "number_books_account": "Número de Radicado Libros Contables",
+      "dni_manager": "Número de Cédula de Ciudadanía",
+      "apply_all": "Aplicar para todos los Candidatos"
+    },
+    "representative": {
+      "title_card": "¿Quien inscribe la lista?",
+      "dni": "Número de Cédula de Ciudadanía",
+      "name": "Nombre Completo",
+      "first_name": "Primer Nombre",
+      "second_name": "Segundo Nombre",
+      "first_surname": "Primer Apellido",
+      "second_surname": "Segundo Apellido"
+    },
+    "summary_header": {
+      "upload_doc_at": "Fecha de Cargue de Documentación",
+      "approved_at": "Fecha de Aprobación de la inscripción",
+      "send_approve": "Fecha de Envío a Aprobación",
+      "status": "Estado de la Inscripción",
+      "logo_status": "Estado del logo o símbolo",
+      "radicate": "Número de radicado"
+    }
+  },
+  "validations": {
+    "alternative_mail_must_be_different": "Correo electrónico alterno debe ser diferente",
+    "email_confirm_is_not_valid": "Confirmación de correo no coincide",
+    "mobile_or_phone": "Debe ingresar un número de celular o teléfono fijo.",
+    "grouping_political_major_one": "La coalición de conformarse por dos o más agrupaciones políticas",
+    "fields_required": "Este campo es requerido",
+    "inscription_incorrect_status": "No es posible cargar inscripción, porque no se encuentra en estado <strong>{status}</strong>",
+    "grouping_create_success": "Agrupación política creada exitosamente",
+    "user_activated": "El usuario se activó correctamente",
+    "inscription_success": "La inscripción fue aprobada correctamente",
+    "inscription_change_success": "La modificación fue aprobada correctamente",
+    "privileges": "Usted no cuenta con privilegios para ejecutar esta acción.",
+    "data_counter": "Debe presionar el botón buscar para cargar la información del Contador.",
+    "data_manager": "Debe presionar el botón buscar para cargar la información del Gerente.",
+    "no_financial_institutions": "No existe entidades financieras.",
+    "no_account_type": "No existen tipos de cuentas.",
+    "no_candidate": "No existen candidatos.",
+    "no_dni": "Cédula no encontrada.",
+    "field_max": "Máximo {count} caracteres",
+    "support_required": "Soporte es requerido",
+    "errorAlert": "No se encontraron agrupaciones políticas con el codigo ingresado"
+  },
+  "user": {
+    "title_edit_form": "Editar usuario",
+    "msj_user_edit": "Usuario actualizado correctamente",
+    "msj_user_save": "Usuario creado correctamente",
+    "fullname": "Nombre de usuario",
+    "firstname": "Primer nombre",
+    "secondname": "Segundo nombre",
+    "firstsurname": "Primer apellido",
+    "secondsurname": "Segundo apellido",
+    "username": "Código de usuario",
+    "user_rol": "Perfil de usuario",
+    "phone": "Número de celular",
+    "email": "Correo electrónico",
+    "indicative": "Indicativo",
+    "localphone": "Teléfono",
+    "confirm_email": "Confirmar Correo Electrónico",
+    "department": "Departamento Inscripción",
+    "department_filter": "Departamento",
+    "municipality_filter": "Municipio",
+    "commune_filter": "Comuna/Localidad/Corregimiento",
+    "groupingPoliticalTypes": "Tipo de Agrupación Política",
+    "municipalities": "Municipio Inscripción",
+    "groupingPoliticals": "Nombre de la Agrupación Política",
+    "status": "Activo",
+    "instatus": "Inactivo",
+    "status_header": "Estado",
+    "actions": "Acciones",
+    "change_password": "Restablecimiento de contraseña",
+    "inactive": "Inactivo",
+    "create_user": "Crear usuario",
+    "edit_user": "Editar usuario",
+    "cancel": "Cancelar",
+    "back": "Volver",
+    "sending_data": "Enviando información",
+    "code_user": "Código",
+    "no_change_password": "No",
+    "changed_password": "Si",
+    "btn_reset_password": "Restablecer contraseña",
+    "are_you_sure": "¿Estás seguro?",
+    "text_swal": "De restablecer la contraseña del usuario",
+    "confirm_button_text": "Si, restablecer contraseña",
+    "title_confirmed_change_password": "Bien hecho!",
+    "text_confirmed_change_password": "Contraseña restablecida correctamente, por favor revisar correo electrónico",
+    "btn_search": "Consultar",
+    "btn_export": "Exportar Excel",
+    "btn_clear": "Limpiar",
+    "divipolePermissions": "Permisos de divipole",
+    "breadcrumbs": {
+      "title": "Módulo de Usuarios",
+      "edit": "Editar usuario",
+      "users": "Administrar Usuarios",
+      "create_user": "Crear usuario",
+      "create_user_aux": "Crear usuario auxiliar",
+      "upload_user_file": "Cargar Archivo de Usuarios",
+      "differential_focus": "Administrar Campo Enfoque Diferencial"
+    },
+    "upload": {
+      "title_card": "Cargue Masivo de Usuarios",
+      "title_documentation": "Instructivo y Plantilla",
+      "label_download_documentation": "Ayuda para cargue masivo",
+      "label_download_template": "Descargue la plantilla de ejemplo",
+      "title_upload_file": "Cargar Archivo",
+      "title_import_response": "Resultados",
+      "file_max_size": "Tamaño máximo de archivo {limit}",
+      "file_types": "Tipo de archivo soportado {type}",
+      "unselectfile": "No cuenta con Archivos cargados",
+      "selectfile": "Examinar",
+      "upload_new_file": "Cargar nuevo archivo",
+      "total_records": "Total",
+      "total_success": "Correctos",
+      "total_warning": "Alertas",
+      "total_error": "Errores"
+    },
+    "listUserAux": {
+      "userCode": "Código de usuario",
+      "userName": "Nombre de Usuario",
+      "email": "Correo Electrónico",
+      "roleName": "Perfil de Usuario",
+      "groupingPoliticalNameType": "Tipo de Agrupación Política",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "status": "Activo",
+      "e6Quantity": "Cantidad de E6",
+      "e7Quantity": "Cantidad de E7",
+      "filter": "Filtro",
+      "nameFilter": "Nombre"
+    }
+  },
+  "OMD": {
+    "group_political": {
+      "breadcrumbs": "OMD",
+      "title": "OMD Cambio Nombre de Agrupación Política",
+      "title2": "Agrupación Política",
+      "codeGroupingPolitical": "Código de la Agrupación Política",
+      "codeGroupingPoliticalNew": "Nuevo Código de la Agrupación Política",
+      "nameGrupPoli": "Nombre de la Agrupación Política",
+      "nameGrupPoliNew": "Nuevo Nombre de la Agrupación Política",
+      "motive": "Motivo",
+      "btnCreate": "Guardar",
+      "btnView": "Visualizar"
+    },
+    "change_name_group_political": {
+      "breadcrumbs": "OMD",
+      "title": "OMD Cambio Nombre de Agrupación Política E8",
+      "title2": "Agrupación Política",
+      "codeGroupingPolitical": "Código de la Agrupación Política",
+      "codeGroupingPoliticalNew": "Nuevo Código de la Agrupación Política",
+      "nameGrupPoli": "Nombre de la Agrupación Política",
+      "nameGrupPoliNew": "Nuevo Nombre de la Agrupación Política",
+      "motive": "Motivo",
+      "btnCreate": "Guardar",
+      "btnView": "Visualizar",
+      "sectionAP": "Información de la Agrupación Política",
+      "btnSearch": "Buscar",
+      "chargeFileSupport": "Cargar Archivo Soporte",
+      "btnGenerateOMD": "Generar OMD",
+      "candidateList": "Listado de Candidatos",
+      "btnCharge": "Cargar",
+      "btnCancel": "Cancelar",
+      "btnExamination": "Examinar",
+      "alertFilters": "Debe seleccionar las opciones del filtro para buscar información",
+      "addressGPE8": "Dirección de Correspondencia",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "phoneGP": "Número de Celular",
+      "NameRecipientList": "Nombre de quien recibe la lista",
+      "emailGP_E8": "Correo Electrónico",
+      "alterEmailGP_E8": "Correo Electrónico Alterno",
+      "phoneNumber_E8": "Número de celular",
+      "local_phone_E8": "Número de Teléfono Fijo",
+      "DniInscritorList": "Número de Cédula de Ciudadanía de Quien inscribe la lista",
+      "nameInscritorList": "Nombre de Quien inscribe la lista",
+      "causal": "Causal",
+      "newVoteOption": "Nueva Opción de Voto",
+      "changeMotive": "Motivo del cambio",
+      "btnChangeVoteoption": "Cambiar opción de voto",
+      "groupingPoliticalAssociated": "Agrupación Política Asociada",
+      "groupingPoliticalNow": "Agrupación Política Actual"
+    },
+    "change_data_group_political": {
+      "CreateOMDEspecial":"Crear OMD Especial",
+      "breadcrumbs": "OMD",
+      "title": "OMD Modificación de Datos Agrupación Política - E8",
+      "title2": "Agrupación Política",
+      "codeGroupingPolitical": "Código de la Agrupación Política",
+      "codeGroupingPoliticalNew": "Nuevo Código de la Agrupación Política",
+      "nameGrupPoli": "Nombre de la Agrupación Política",
+      "nameGrupPoliNew": "Nuevo Nombre de la Agrupación Política",
+      "motive": "Motivo",
+      "btnCreate": "Guardar",
+      "btnView": "Visualizar",
+      "sectionAP": "Información de la Agrupación Política",
+      "btnSearch": "Buscar",
+      "chargeFileSupport": "Cargar Archivo Soporte",
+      "btnGenerateOMD": "Generar OMD",
+      "candidateList": "Listado de Candidatos",
+      "btnCharge": "Cargar",
+      "btnCancel": "Cancelar",
+      "btnSaveOMD": "Guardar OMD",
+      "btnExamination": "Examinar",
+      "alertFilters": "Debe seleccionar las opciones del filtro para buscar información",
+      "addressGPE8": "Dirección de Correspondencia",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "phoneGP": "Número de Celular",
+      "NameRecipientList": "Nombre de quien recibe la lista",
+      "emailGP_E8": "Correo Electrónico",
+      "alterEmailGP_E8": "Correo Electrónico Alterno",
+      "phoneNumber_E8": "Número de celular",
+      "local_phone_E8": "Número de Teléfono Fijo",
+      "dniInscritorList": "Número Cédula Ciudadanía de Quien inscribe la lista",
+      "nameInscritorList": "Nombre de Quien inscribe la lista",
+      "causal": "Causal",
+      "newVoteOption": "Nueva Opción de Voto",
+      "changeMotive": "Motivo del cambio",
+      "btnChangeVoteoption": "Cambiar opción de voto",
+      "groupingPoliticalAssociated": "Agrupación Política Asociada",
+      "groupingPoliticalNow": "Agrupación Política Actual",
+      "dni": "Número de Cédula",
+      "fullName": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "phoneCelular": "Número de Celular",
+      "localPhone": "Teléfono Fijo"
+    },
+    "newPoliticalParty": {
+      "grouping_political_type": "Tipo de Agrupación Política",
+      "grouping_political_name": "Nombre de la Agrupación Política"
+    },
+    "vote_option": {
+      "title": "OMD Cambiar Opción de Voto",
+      "breadcrumbs": "OMD Cambiar Opción de Voto",
+      "sectionAP": "Información de la Agrupación Política",
+      "btnSearch": "Buscar",
+      "chargeFileSupport": "Cargar Archivo Soporte",
+      "btnGenerateOMD": "Generar OMD",
+      "btnSaveOMD": "Guardar OMD",
+      "candidateList": "Listado de Candidatos",
+      "btnCharge": "Cargar",
+      "btnCancel": "Cancelar",
+      "btnExamination": "Examinar",
+      "alertFilters": "Debe seleccionar las opciones del filtro para buscar información",
+      "addressGP": "Dirección",
+      "phoneGP": "Número de Celular",
+      "NameRecipientList": "Nombre de quien recibe la lista",
+      "emailGP": "Correo Electrónico",
+      "voteOption": "Opción de Voto",
+      "causal": "Causal",
+      "newVoteOption": "Nueva Opción de Voto",
+      "changeMotive": "Motivo del cambio",
+      "btnChangeVoteoption": "Cambiar opción de voto"
+    },
+    "change_data_candidates": {
+      "title": "OMD Modificación de Información del Candidato",
+      "rowFiled": "Renglon",
+      "motiveType":"Tipo Motivo",
+      "sectionAP": "Información de la Agrupación Política",
+      "btnSearch": "Buscar",
+      "btnAdd": "Agregar",
+      "btnFilter": "Filtrar",
+      "dniNow": "N°. Cédula Ciudadanía Actual",
+      "firtsNameNow": "Primer Nombre Actual",
+      "secondNameNow": "Segundo Nombre Actual",
+      "firtsSurNameNow": "Primer Apellido Actual",
+      "secondFirstSurNameNow": "Segundo Apellido Actual",
+      "dniNew": "N°. Cédula Ciudadanía Nueva",
+      "firtsNameNew": "Primer Nombre Nuevo",
+      "secondNameNew": "Segundo Nombre Nuevo",
+      "firtsSurNameNew": "Primer Apellido Nuevo",
+      "secondFirstSurNameNew": "Segundo Apellido Nuevo"
+    },
+    "fields": {
+      "line": "Renglon",
+      "numberDni": "Número de Cedula de Ciudadanía",
+      "firtsName": "Primer Nombre",
+      "secondName": "Segundo Nombre",
+      "firtsSurName": "Primer Apellido",
+      "secondSurName": "Segundo Apellido",
+      "gender": "Género",
+      "age": "Edad",
+      "email":"Correo Electrónico"
+    },
+    "fieldslistOMD": {
+      "omdNumber": "No. OMD",
+      "omdType": "Tipo OMD",
+      "omdReason": "Motivo OMD",
+      "departament": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna/Localidad/Corregimiento",
+      "corporation": "Corporación/Cargo",
+      "circunscription": "Circunscripción",
+      "typePoliticalGrouping": "Tipo de agrupación política",
+      "namePoliticalGrouping": "Agrupación política",
+      "motiveOMD": "Observación",
+      "userCreate": "Usuario de creación",
+      "dateCreate": "Fecha de creación",
+      "support": "Soporte",
+      "optionShowOMD": "Ver OMD",
+      "optionShowOffice": "Ver oficio de entrega",
+      "checked": "Firmado"
+    },
+    "upload_options": {
+      "type_file": "Tipo de archivo soportado PDF",
+      "messageMaxSize": "Tamaño máximo de archivo: 5MB",
+      "messageMaxSize1MB": "Tamaño máximo de archivo: 1MB",
+      "warning_validation": "Archivo verificado exitosamente",
+      "select_button": "Examinar",
+      "save_file": "Guardar",
+      "exit_file": "Cancelar",
+      "file_ok": "Archivo verificado exitosamente",
+      "file_error": "El tipo de archivo no es .txt",
+      "warning_opening": "No cuenta con permisos para ejecutar esta acción",
+      "breadcrumbs": {
+        "title": "Cargar archivos",
+        "item_one": "Cargue de Corporaciones"
+      }
+    },
+    "checkSignedOMD": {
+      "title": "Chequear OMD Firmadas",
+      "messageMaxSize": "Tamaño máximo de archivo: 5MB",
+      "warning_validation": "Archivo verificado exitosamente",
+      "select_button": "Examinar",
+      "save_file": "Guardar",
+      "exit_file": "Cancelar",
+      "file_ok": "Archivo verificado exitosamente",
+      "file_error": "El tipo de archivo no es .txt",
+      "warning_opening": "No cuenta con permisos para ejecutar esta acción",
+      "breadcrumbs": {
+        "title": "Cargar archivos",
+        "item_one": "Cargue de Corporaciones"
+      }
+    },
+    "listOMD": {
+      "title": "Listar OMD",
+      "description": "Descripción",
+      "btnSearch": "Buscar"
+    }
+  },
+  "candidates": {
+    "page_title": "Listado de Candidatos Inscritos",
+    "grouping_political_name": "Nombre Agrupación Política",
+    "political_name": "Partido Liberal Colombiano",
+    "search": "Buscar",
+    "rowField": "Renglón",
+    "full_name": "Nombres y Apellidos",
+    "names": "Nombres",
+    "lastNames": "Apellidos",
+    "corporation": "Corporación",
+    "department": "Departamento",
+    "municipality": "Municipio",
+    "pending": "Pendiente Aceptación",
+    "approved": "Aceptado",
+    "no_records": "No se encontraron registros para esta inscripción",
+    "rejected": " No Aceptado",
+    "resignation": "Renuncia",
+    "empty_preregistred_list": "No hay Candidatos Inscritos",
+    "add_candidate": "Agregar Candidato",
+    "edit_candidate": "Modificar Candidato",
+    "delete_candidate": "Eliminar Candidato",
+    "exchange_candidate": "Intercambiar Candidato",
+    "upload_candidate": "Cargue Masivo",
+    "change_other_e7": "MODIFICACIÓN PENDIENTE EN OTRO FORMULARIO E7",
+    "change_same_e7": "MODIFICACIÓN PENDIENTE",
+    "row_field": "Renglón",
+    "gender": "Género",
+    "age": "Edad",
+    "status": "Estado",
+    "created_at": "Fecha de Inscripción",
+    "update_by": "Último en Modificar Estado",
+    "update_at": "Fecha de Modificación",
+    "registration_location": "Lugar de Inscripción",
+    "title_table": "Gerente de Campaña",
+    "omitted": "Omitidos",
+    "form": {
+      "dni": "Número de Cédula de Ciudadanía",
+      "dniexpdate": "Fecha de expedición",
+      "rowField": "Renglón",
+      "reason_removed": "Motivo de retiro",
+      "names": "Nombres",
+      "surnames": "Apellidos",
+      "firstname": "Primer Nombre",
+      "secondname": "Segundo Nombre",
+      "firstsurname": "Primer Apellido",
+      "secondsurname": "Segundo Apellido",
+      "birthdate": "Fecha de Nacimiento",
+      "gender": "Género",
+      "age": "Edad",
+      "email": "Correo Electrónico",
+      "emailConfirm": "Confirmación de Correo Electrónico",
+      "phone": "Celular",
+      "localphone": "Teléfono fijo",
+      "label_check_differential_focus": "Prefiero no manifestarlo",
+      "focus_victim": "Población Victima de Conflicto",
+      "focus_racial": "Grupo Étnico",
+      "focus_disability": "Ciudadanos con Discapacidad",
+      "focus_identity": "Categorización Según Identidad",
+      "focus_orientation": "Categorización Según Orientación",
+      "observations": "Observaciones",
+      "grouping_political": "Nombre de agrupación política"
+    },
+    "change_row": {
+      "title_card": "Intercambiar renglones",
+      "source": "Renglón origen",
+      "target": "Renglón destino"
+    },
+    "upload": {
+      "title_card": "Cargue Masivo de Candidatos",
+      "title_documentation": "Instructivo y Plantilla",
+      "label_download_documentation": "Ayuda para cargue masivo",
+      "label_download_template": "Descargue la plantilla de ejemplo",
+      "title_upload_file": "Cargar Archivo",
+      "title_upload_attachment": "Cargar Anexo",
+      "title_import_response": "Resultados",
+      "file_max_size": "Tamaño máximo de archivo {limit}",
+      "text_file_max_size": "El archivo excede el peso permitido.",
+      "text_error_extension": "El archivo no cumple con una extensión permitida.",
+      "text_modified_eis": "Código EIS modificado exitosamente",
+      "text_success_eis": "Código EIS cargado exitosamente",
+      "file_types": "Tipo de archivo soportado {type}",
+      "unselectfile": "No cuenta con Archivo cargado",
+      "selectfile": "Examinar",
+      "upload_new_file": "Cargar nuevo archivo",
+      "total_records": "Total",
+      "total_success": "Correctos",
+      "total_warning": "Alertas",
+      "total_error": "Errores",
+      "label_approve_letter": "Aprobar Carta"
+    },
+    "eis": {
+      "table": {
+        "line": "Renglón",
+        "dni": "Número de cédula de ciudadanía",
+        "names": "Nombres",
+        "surnames": "Apellidos",
+        "gender": "Género",
+        "age": "Edad",
+        "eisCode": "Código EIS",
+        "chargedSupport": "Soporte cargado",
+        "action": "Acción"
+      },
+      "breadcrumbs": {
+        "title": "Módulo de documentos",
+        "page": "Cargue código EIS"
+      },
+      "total_error": "Errores",
+      "label_approve_letter": "Aprobar Carta"
+    },
+    "applicationAcceptanceCheck": {
+      "table": {
+        "line": "Renglón",
+        "dni": "Número cédula de ciudadanía",
+        "fullName": "Nombres y apellidos",
+        "gender": "Género",
+        "age": "Edad",
+        "stage": "Etapa del proceso",
+        "acceptedCandidacy": "Aceptó candidatura",
+        "codeTransactional": "Código transacción",
+        "approvalType": "Tipo de aceptación",
+        "eisCode": "Código EIS"
+      },
+      "titleAcceptCandidacy": "¿Desea aceptar la candidatura?",
+      "titleRejectCandidacy": "¿Desea rechazar la candidatura?",
+      "not_operation": "No es posible realizar la operación",
+      "msg_confirmation": "Operación realizada correctamente",
+      "breadcrumbs": {
+        "title": "Módulo de aceptaciones",
+        "page": "Chequeo de aceptación de candidatos"
+      }
+    }
+  },
+  "differential_focus": {
+    "title_card": "Listado de Enfoque Diferencial",
+    "edit_differential_focus": "Editar Enfoque Diferencial",
+    "add_differential_focus": "Agregar Enfoque Diferencial",
+    "label_group_differential_focus": "Grupo de enfoque diferencial",
+    "label_btn_add": "Agregar",
+    "delete_confirm": {
+      "question": "¿Esta seguro de <strong>{status_new}</strong> enfoque diferencial código {code}?",
+      "response": "Enfoque diferencial {status_new}"
+    },
+    "fields": {
+      "code": "Código",
+      "name": "Enfoque Diferencial",
+      "action": "Acciones"
+    },
+    "form": {
+      "code": "Código",
+      "name": "Nombre",
+      "parent_id": "Grupo de enfoque diferencial"
+    }
+  },
+  "menu_phases": {
+    "breadcrumbs": {
+      "module": "Módulo Opciones",
+      "page_title": "Menú por Etapas"
+    },
+    "btn_save": "Guardar Cambios",
+    "systemMessage": {
+      "title": "Mensajes del Sistema",
+      "title_table": "Listado de Mensajes del Sistema",
+      "typeName": "Tipo de Mensaje",
+      "code": "Código de Mensaje",
+      "description": "Descripción del Mensaje",
+      "value": "Detalle del Mensaje",
+      "accion": "Acciones"
+    },
+    "systemNotifications": {
+      "title": "Administrar Notificaciones del Sistema",
+      "title_table": "Listado de Notificaciones del Sistema",
+      "subject": "Tipo de Notificación",
+      "accion": "Acciones"
+    }
+  },
+  "dialog_candidates": {
+    "upload_photograph": "Cargue de Fotografía para",
+    "candidates_description": "Candidatos",
+    "minsize_photo": "Peso mínimo:",
+    "maximum_photo_size": "Peso máximo:",
+    "photo_dimesions": "Tamaño requerido: 4cms de alto por 3cms de ancho",
+    "photo_color": "La foto debe ser a color con fondo blanco",
+    "select": "Seleccionar",
+    "photo_resolution": "Resolución: {limit_dpi} DPI",
+    "photo_formats": "Formato Permitidos: JPG",
+    "save_photo": "Guardar",
+    "exit": "Cancelar",
+    "upload_photo": "Cargar Imagen",
+    "delete_photo": "Eliminar imagen",
+    "warning_documento": "El documento está fuera de los parámetros establecidos",
+    "warning_validation": "Imagen fuera de los parámetros establecidos",
+    "code_user": "Código",
+    "change_status_question": "¿Deseas cambiar el estado del usuario?"
+  },
+  "tabSummary": {
+    "movement_policy_name": "Nombre de la Agrupación Política",
+    "movement_policy": "Nombre de la Agrupación Política ",
+    "id_movement_policy": "Identificación",
+    "btn_information": "Al hacer clic en la opción, los integrantes del comité inscritos y los postulados aceptan el registro",
+    "btn_send_Request": "Enviar Solicitud de Aprobación de Registro",
+    "btn_notification": "Enviar Notificación de Aceptación",
+    "mensaje_title": "Notificación de Aceptación Enviadas",
+    "mensaje_subtitle": "Se enviaron a los correos electrónicos registrados para que sean aceptadas las postulaciones para continuar con el proceso de inscripción",
+    "number_candidates": "Cantidad de candidatos",
+    "no_candidates": "No hay candidatos pendientes por aprobación",
+    "shipping_confirmation": "Confirmación de Envío",
+    "confirmation_email": "¿Confirma que desea enviar la notificación de aceptación?",
+    "send_confirmation": "Enviar Notificación de Aceptación",
+    "registrationSupports": "Soportes de Inscripción",
+    "btn_e6": "Previsualizar Formulario E6 de Inscripción",
+    "fullname": "Nombres y apellidos",
+    "approveStatus": "Estado de la postulación",
+    "applicationAcceptanceCheck": "CHEQUEO DE ACEPTACIÓN DE CANDIDATURA",
+    "preview_e6": {
+      "title_card": "Previsualizar Formulario E6 de Inscripción",
+      "all_right": "Formulario Validado"
+    },
+    "download_e6": {
+      "title_card": "Descargar Documento Aprobado E6",
+      "title_card_physical": "Descargar Documento Firmado",
+      "all_right": "Formulario Validado"
+    },
+    "download_e7": {
+      "title_card": "Descargar Formulario Aprobado E7",
+      "title_card_physical": "Descargar Documento Firmado",
+      "all_right": "Formulario Validado"
+    },
+    "download_e8": {
+      "title_card": "Imprimir Formulario E8",
+      "all_right": "Formulario Validado"
+    },
+    "reverse_e8": {
+      "title": "Reversar Formulario E8"
+    },
+    "request_approve": {
+      "title_card": "Enviar Solicitud de Aprobación de Inscripción",
+      "text_card": "Haz click aquí para solicitar aprobación de inscripción",
+      "must_register_candidates": "La inscripción no cuenta con candidatos registrados",
+      "has_a_candidate_without_accepting_participation": "La inscripción contiene candidatos sin aprobar su participación",
+      "question": "¿Estas seguro de enviar la solicitud de aprobación de registro?",
+      "response": "Solicitud enviada con éxito"
+    },
+    "approve_request": {
+      "title_card": "APROBAR O DEVOLVER",
+      "radicate_label": "Radicado",
+      "preview_e6": "Previsualizar E6",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "cancel": "Cancelar"
+    }
+  },
+  "tabSummary_e7": {
+    "movement_policy_name": "Nombre de la Agrupación Política",
+    "movement_policy": "Nombre de la Agrupación Política ",
+    "id_movement_policy": "Identificación",
+    "btn_information": "Al hacer clic en la opción, los integrantes del comité inscritos y los postulados aceptan el registro",
+    "btn_send_Request": "Enviar Solicitud de Aprobación de Registro",
+    "btn_notification": "Enviar Notificación de Aceptación",
+    "mensaje_title": "Notificación de Aceptación Enviadas",
+    "mensaje_subtitle": "Se enviaron a los correos electrónicos registrados para que sean aceptadas las postulaciones para continuar con el proceso de inscripción",
+    "number_candidates": "Cantidad de candidatos",
+    "no_candidates": "No hay candidatos pendientes por aprobación",
+    "shipping_confirmation": "Confirmación de Envío",
+    "confirmation_email": "¿Confirma que desea enviar la notificación de aceptación?",
+    "send_confirmation": "Enviar Notificación de Aceptación",
+    "registrationSupports": "Soportes de Inscripción",
+    "btn_e7": "Previsualizar Formulario E7 de Modificación",
+    "fullname": "Nombres y apellidos",
+    "approveStatus": "Estado de la postulación",
+    "preview_e7": {
+      "title_card": "Previsualizar Formulario E7 de Modificación",
+      "all_right": "Formulario Validado"
+    },
+    "download_e7": {
+      "title_card": "Descargar Formulario Aprobado E7",
+      "all_right": "Formulario Validado"
+    },
+    "request_approve": {
+      "title_card": "Enviar Solicitud de Aprobación de Formulario E7 de Modificación",
+      "text_card": "Haz click aquí para solicitar aprobación de formulario E7 de modifiación",
+      "must_register_candidates": "La inscripción no cuenta con candidatos registrados",
+      "has_a_candidate_without_accepting_participation": "La inscripción contiene candidatos sin aprobar su participación",
+      "question": "¿Estas seguro de enviar la solicitud de aprobación de registro?",
+      "response": "Solicitud enviada con éxito"
+    },
+    "approve_request": {
+      "title_card": "APROBAR O DEVOLVER",
+      "radicate_label": "Radicado",
+      "preview_e7": "Previsualizar E7",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "visualize": "Visualizar",
+      "search": "Buscar"
+    },
+    "cancel": {
+      "title_card": "Anular Formulario E7",
+      "motive": "Motivo de la Anulación",
+      "support": "Soporte",
+      "success_cancel": "Anulación Exitosa"
+    }
+  },
+  "upload_logo": {
+    "select_button": "Examinar",
+    "maximum_logo": "Tamaño máximo de archivo 1 MB.",
+    "maximum_document": "Tamaño máximo de archivo 5 MB.",
+    "type_file_logo": "Tipo de archivo permitido JPG, PDF.",
+    "type_file": "Tipo de archivo soportado PDF.",
+    "logo_resolution": "Resolución 300 DPI",
+    "dimension_logo_corporations": "Dimensión Logo para Concejo, JAL, Asamblea: ",
+    "dimension_logo_corporations_final": "1.8 cms (alto) * 2.6 cms (Ancho)",
+    "dimension_logo_position": "Dimensión Logo para Gobernación y Alcaldía: ",
+    "dimension_logo_position_final": "1.4 cms (alto) * 4.5 cms (Ancho)",
+    "description": "Descripción",
+    "observacion": "Observación",
+    "recommendations": "Se recomienda tener en cuenta no utilizar los siguientes puntos:",
+    "first_recommendation": "Imágenes religiosas",
+    "second_recommendation": "El nombre o la imagen de una persona determinada",
+    "third_recommendation": "Nombres de Personajes históricos",
+    "fourth_recommendation": "Símbolos de otros partidos o movimientos políticos",
+    "fifth_recommendation": "Bandera de Colombia o el Escudo Nacional",
+    "sixth_recommendation": "Símbolos que puedan generar confusión con otros previamente",
+    "sixth_two_recommendation": "registrados ante el Consejo Nacional Electoral",
+    "seventh_recommendation": "La denominación “Partido”",
+    "eighth_recommendation": "Sujeto a verificación y aprobación por el Consejo Nacional Electoral CNE.",
+    "ninth_recommendation": "Una vez aprobado el logo o símbolo, la agrupación política podrá utilizarlo como propagando política para el proceso.",
+    "save_logo": "Cargar",
+    "warning_validation": "Imagen fuera de los parámetros establecidos",
+    "message_exist_logo": "Está agrupación ya cuenta con logo establecido",
+    "exit_logo": "Cancelar"
+  },
+  "permissions_profiles": {
+    "administration": "Módulo de Usuarios",
+    "permission_assignment": "Asignar Opciones de Menú a Perfiles",
+    "page_title": "Asignar Permisos por Perfiles",
+    "search_profiles": "Perfiles",
+    "unassigned_menu": "Menú sin Asignar",
+    "assigned_menu": "Menú Asignado",
+    "warning_permissions": "No cuenta con permisos para esta acción"
+  },
+  "opening_preinscription": {
+    "page_title": "Parametrización Horario Inscripción de Candidatos",
+    "card_title_e6": "Pre-Inscripciones E6",
+    "card_title_e7": "Modificaciones E7",
+    "opening_date": "Fecha y Hora de Apertura",
+    "closing_date": "Fecha y Hora de Cierre",
+    "field_required": "Este campo es obligatorio",
+    "exit_opening": "Cancelar",
+    "save_opening": "Guardar",
+    "user_code": "Código de Usuario",
+    "username": "Nombre de usuario",
+    "profile": "Perfil",
+    "search_user": "Buscar",
+    "form_e6": "Formulario E6",
+    "form_e7": "Formulario E7",
+    "opening_e6": "Apertura",
+    "closing_e6": "Cierre",
+    "opening_e7": "Apertura",
+    "closing_e7": "Cierre",
+    "change_dates": "Cambio Fechas",
+    "success_phases": "Se guardaron correctamente las fechas",
+    "warning_phases": "Hubo un error al guardar las fechas",
+    "success_phases_update": "Se actualizaron correctamente las fechas",
+    "warning_phases_update": "Hubo un error al actualizar las fechas",
+    "title_edit_form": "Parametrización Horario Inscripción de Candidatos",
+    "breadcrumbs": {
+      "title": "Módulo de Opciones",
+      "item_one": "Parametrización Horario Inscripción de Candidatos",
+      "item_second": "Previsualización"
+    },
+    "warning_opening": "No cuenta con permisos para ejecutar esta acción",
+    "existing_dates": "Ya existen registros de fechas de inicio y cierre en Etapas E6 y E7"
+  },
+  "systemParameters": {
+    "code": "Código",
+    "description": "Descripción",
+    "value": "Valor",
+    "breadcrumbs": {
+      "title": "Mantenimiento de parámetros",
+      "parameters": "Parámetros"
+    },
+    "msg_update": "Parámetro actualizado correctamente",
+    "msg_error": "No ha sido posible actualizar el parámetro"
+  },
+  "supportingDocuments": {
+    "close": "Cerrar",
+    "breadcrumbs": {
+      "title": "Módulo de formularios",
+      "document_list": "Lista de soportes",
+      "listE6Approved": "Generación Archivo Listado E6 Aprobados",
+      "reverse_form_E6_approved": "Reversar Formulario E6 Aprobados",
+      "listE7Approved": "Generación Archivo Listado E7 Aprobados",
+      "reverse_form_E7_approved": "Reversar Formulario E7 Aprobados",
+      "definitiveCandidatesList": "Generación Archivo Listado de Candidatos Definitivos"
+    },
+    "supportFilter": {
+      "type_political_party": "Tipo de partido",
+      "political_grouping": "Tipo de agrupación política",
+      "name_political_grouping": "Nombre de agrupación política",
+      "corporation": "Corporación/Cargo",
+      "circunscription": "Circunscripción",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "support_type": "Tipo de soporte",
+      "search": "Consultar",
+      "clear": "Limpiar"
+    },
+    "table": {
+      "political_party": "Nombre de la Agrupación Política",
+      "corporation": "Corporación/Cargo",
+      "circunscription": "Circunscripción",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "consecutive": "Consecutivo",
+      "support": "Soporte"
+    },
+    "management": {
+      "breadcrumbs": {
+        "title": "Módulo de documentos",
+        "page": "Adminsitración documentos soportes",
+        "child": "Lista de documentos soportes"
+      },
+      "table": {
+        "phase": "Etapa del proceso",
+        "corporation": "Corporación/cargo",
+        "circunscription": "Circunscripción",
+        "description": "Descripción del documento",
+        "action": "Acción"
+      },
+      "swal": {
+        "text_active": "¿Estás seguro de activar el documento soporte seleccionado?",
+        "text_inactive": "¿Estás seguro de inactivar el documento soporte seleccionado?",
+        "msg_success": "Operación realizada correctamente"
+      }
+    }
+  },
+  "daysPendingPerStage": {
+    "description": "Recuerde que faltan",
+    "daysWord": "días ",
+    "description_next": "para el cierre de la",
+    "phase": "Etapa",
+    "description_final": "Modificación de Candidaturas"
+  },
+  "daysPendingPerUploadSymbol": {
+    "description": "Recuerde que faltan",
+    "description_next": "días para que el sistema le permita realizar cargue de logo o símbolo",
+    "no_notifications": "Tienes 0 notificaciones por leer"
+  },
+  "daysPendingPerUploadPhotoCandidate": {
+    "description": "Recuerde que faltan",
+    "description_next": "días para que el sistema le permita realizar cargue de fotos"
+  },
+  "basicInfo": {
+    "editBasic": "Editar información básica",
+    "enrollList": "Nombre de Quien Inscribe la Lista",
+    "enrollList_dni": "Número de Cédula de Quien Inscribe la Lista",
+    "description_final": "Inscripción de candidaturas",
+    "celularPhone": "Número de Celular"
+  },
+  "securityPolicy": {
+    "numberSheets": "Cantidad de Folios con Firma de Apoyo",
+    "numberSignatures": "Cantidad de Firmas de Apoyo",
+    "policyNumber": "Número de póliza",
+    "insuranceCompanyBank": "Compañía Aseguradora o Banco",
+    "valueCovered": "Valor Amparado",
+    "startDate": "Fecha Inicio",
+    "endingDate": "Fecha Final",
+    "seriousnessPolicy": "Póliza de seriedad",
+    "bankGuarantee": "Garantía Bancaria",
+    "insurancePolicy": "Póliza de seguros",
+    "validityPolicy": "Vigencia de Póliza de Seriedad"
+  },
+  "formsPendingApproval": {
+    "corporation": "Corporación/Cargo",
+    "circunscripcion": "Circunscripción",
+    "departament": "Departamento",
+    "municipality": "Municipio",
+    "commune": "Comuna/Localidad/Corregimiento",
+    "group_politic_tipe": "tipo de agrupación política",
+    "group_politic": "Nombre de la Agrupación Política",
+    "consecutive": "Consecutivo",
+    "state": "Estado",
+    "DocumentsE6_charged": "Documentos E6 Cargados",
+    "approvedForm_E6": "Aprobar Formulario E6 ",
+    "DocumentsE7_charged": "Documentos E7 Cargados",
+    "approvedForm_E7": "Aprobar Formulario E7 ",
+    "state_documents_charged": "Estado Documentos Cargados",
+    "breadcrumbs": {
+      "title": "Consultar Formularios Pendientes",
+      "btnExportTitle": "Exportar",
+      "bntCSV": "CSV",
+      "bntExcel": "XLS",
+      "bntPDF": "PDF",
+      "bntDocumentsInscription": "Documentos de la Inscripción",
+      "bntDocumentsApprovedE6": "Aprobar Formulario E6",
+      "bntDocumentsApprovedE7": "Aprobar Formulario E7",
+      "inscriptionTypeName": "Tipo de Inscripción"
+    },
+    "alertDataNull": {
+      "alert": "No hay registros para mostrar"
+    },
+    "stateInscription": {
+      "pending": "Pendiente",
+      "send": "Enviado",
+      "approved": "Aprobado"
+    }
+  },
+  "committeeMembers": {
+    "alert_text": "La Registraduría Nacional del Estado Civil, no se responsabilizará por cualquier consecuencia derivada de la postulación de integrantes de los comités inscriptores y/o candidatos, esta facultad es exclusiva de las agrupaciones políticas",
+    "dni": "Número de Cédula de Ciudadanía",
+    "full_name": "Nombre completo",
+    "email": "Correo electrónico",
+    "cell_phone": "Número de celular",
+    "local_phone": "Teléfono fijo",
+    "status_member": "Estado",
+    "actions": "Acciones",
+    "sendApproveStatus": "Aprobado",
+    "sendNotApproveStatus": "Pendiente por aprobación",
+    "formEdit": {
+      "email": "Correo electrónico",
+      "emailConfirmed": "Confirmar correo electrónico",
+      "phone": "Número de celular",
+      "localPhone": "Número de teléfono",
+      "title_dialog": "Editar información básica",
+      "title_dialog_2": "Integrantes del comité inscriptor.",
+      "btn_save": "Guardar",
+      "btn_close": "Cerrar"
+    },
+    "msg_update_data": "Información actualizada correctamente",
+    "msg_error": "La información no pudo ser actualizada"
+  },
+  "availableTabs": {
+    "MembersRegistrationCommittee": "Integrantes del comité inscriptor"
+  },
+  "dataTablaServerSide": {
+    "msg_no_info": "No hay información disponible en este momento",
+    "msg_not_change": "No hay cartas de renuncias para guardar",
+    "msg_not_change_approve": "No hay cartas de aceptación para guardar"
+  },
+  "modifyUserLimit": {
+    "title": "Módulo de Agrupación Política",
+    "manage_political_grouping": "Administrar Agrupación Política",
+    "grouping_politial_code": "Código de Agrupación",
+    "grouping_political": "Agrupación política",
+    "auxiliaryUserLimit": "Limite de usuarios auxiliares",
+    "btn_search": "Consultar",
+    "btn_save": "Guardar",
+    "btn_clear": "Limpiar",
+    "limit_user_msg": "Limite de usuario es requerido",
+    "msg_error_search": "Por favor validar la información ingresada",
+    "msg_success": "Información actualizada correctamente",
+    "breadcrumbs": {
+      "title": "Limite de usuarios",
+      "page": "Modificar Límite de Usuarios Auxiliares"
+    }
+  },
+  "coalitions": {
+    "breadcrumbs": {
+      "title": "Módulo de Coaliciones",
+      "page": "Crear coalición",
+      "home": "Coaliciones",
+      "listhome": "Listados de Coaliciones por Agrupación"
+    },
+    "title": "Crear coalición",
+    "form": {
+      "coalition_code": "Código de coalición",
+      "coalition_name": "Nombre de coalición",
+      "coalition_type": "Tipo de coalición",
+      "grouping_political_name": "Nombre agrupación política",
+      "grouping_political_type": "Tipo de agrupación política",
+      "corporation": "Corporación/cargo",
+      "email": "Correo electrónico",
+      "emailAlter": "Correo electrónico alterno",
+      "dni": "Número documento del responsable",
+      "name": "Nombre del resposanble",
+      "address": "Dirección",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "phone": "Número de celular",
+      "local_phone": "Teléfono fijo",
+      "grouping_political_responsible": "Agrupación política resposanble",
+      "contact_data": "DATOS DE CONTACTO",
+      "responsible_name": "Nombre del responsable",
+      "participating_groups": "AGRUPACIONES PARTICIPANTES",
+      "vote": "Votación 2019"
+    },
+    "txt_grouping_political_responsible": "Agrupación política responsable de la coalición",
+    "txt_grouping_political_responsible_clear_account": "Agrupación política responsable de presentar cuentas claras",
+    "btn_save": "Guardar",
+    "btn_cancel": "Cancelar",
+    "btn_back": "Volver a la lista",
+    "btn_search": "Buscar",
+    "btn_clear": "Limpiar",
+    "confirm_button_text": "Si, eliminar",
+    "btn_add": "Agregar agrupación",
+    "btn_delete": "Eliminar coalición",
+    "btn_close_modal": "Cerrar",
+    "table": {
+      "grouping_political_code": "Código",
+      "grouping_political_description": "Descripción de la agrupación",
+      "responsible": "Responsable",
+      "responsible_account": "Responsable cuentas claras",
+      "vote": "Votación 2019",
+      "actions": "Acciones"
+    },
+    "alert_no_responsible": "Favor seleccione un responsable",
+    "alert_no_responsible_clear_account": "Favor seleccione un responsable de cuentas claras",
+    "msg_created": "Creada exitosamente",
+    "msg_error": "Ocurrió un error al enviar la información",
+    "title_confirmed_delete_coalitions": "¿Estas seguro de eliminar la coalición ",
+    "msg_coalition_deleted": "Coalición eliminada correctamente",
+    "coalitions_grouping": "Agrupaciones de la coalición",
+    "not_operation": "No se pudo completar acción, por favor intente más tarde.",
+    "create_coalition": "Crear coalición",
+    "political_grouping_code": "Código agrupación política",
+    "code_grouping_political_type": "Código de la agrupación política",
+    "commune_field": "Por favor seleccionar Comuna/Localidad/Corregimiento",
+    "datatable": {
+      "coalitionCode": "Código coalición",
+      "description": "Descripción",
+      "representative": "Usuario responsable",
+      "action": "Acción",
+      "coalitionName": "Nombre de la Coalición"
+    }
+  },
+  "monitoring_political_groups": {
+    "title": "Módulo de Agrupación Política",
+    "page_title": "Seguimiento de Agrupaciones Políticas",
+    "select_option": "Seleccione una opción:",
+    "no_inscriptions": "Sin inscripciones",
+    "with_inscriptions": "Con inscripciones",
+    "not_into_system": "Sin ingresos al sistema",
+    "into_system": "Con ingresos al sistema",
+    "exit": "Cancelar",
+    "search": "Buscar",
+    "search_result": "Resultado de la búsqueda",
+    "code": "Código",
+    "warning_opening": "No cuenta con permisos para ejecutar esta acción",
+    "name_political_grouping": "Nombre de agrupación política",
+    "breadcrumbs": {
+      "title": "Inicio",
+      "item_one": "Seguimiento de Agrupaciones Políticas"
+    }
+  },
+  "notifications": {
+    "notifications_title": "Notificaciones",
+    "notifications_title_no": "No hay Notificaciones",
+    "notifications_time": "Tiene",
+    "notifications_message_tiem": "notificaciones",
+    "notifications_message_leer": "pendientes por leer",
+    "notifications_message_btn": "LEER TODAS LAS NOTIFICACIONES",
+    "notifications_message_leer_btn": "MARCAR COMO LEÍDAS",
+    "title": "Estados Correos",
+    "statistics": {
+      "id": "No",
+      "name": "Estado",
+      "count": "Cantidad"
+    },
+    "list": {
+      "id": "No",
+      "recipient": "Receptor E-mail",
+      "subject": "Asunto",
+      "state": "Estado",
+      "priority": "Prioridad"
+    }
+  },
+  "corporate_loading": {
+    "page_title": "Seguimiento Agrupaciones Políticas",
+    "type_file": "Tipo de archivo soportado .txt",
+    "warning_validation": "Archivo verificado exitosamente",
+    "select_button": "Examinar",
+    "save_file": "Guardar",
+    "exit_file": "Cancelar",
+    "file_ok": "Archivo verificado exitosamente",
+    "file_error": "El tipo de archivo no es .txt",
+    "warning_opening": "No cuenta con permisos para ejecutar esta acción",
+    "breadcrumbs": {
+      "title": "Cargar archivos",
+      "item_one": "Cargue de Corporaciones"
+    }
+  },
+  "list_candidates": {
+    "search_list": "Buscar",
+    "reset_list": "Limpiar",
+    "incidents_found": "Resultados de la Búsqueda",
+    "corporation": "Corporación/Cargo",
+    "circunscription": "Circunscripción",
+    "grouping_political_type": "Tipo de Agrupación Política",
+    "grouping_political_name": "Nombre Agrupación Política",
+    "departament": "Departamento",
+    "municipality": "Municipio",
+    "commune": "Comuna/Localidad/Corregimiento",
+    "rowField": "Renglón",
+    "candidateDni": "Cédula",
+    "name": "Nombres",
+    "surname": "Apellidos",
+    "breadcrumbs": {
+      "title": "Módulo de aceptaciones",
+      "item_one": "Listado de Candidatos sin Chequeo de Aceptación de Candidatura"
+    }
+  },
+  "module_documents": {
+    "title": "Módulo de Documentos",
+    "resignation": {
+      "title": "Cartas de Renuncia",
+      "title_single": "Carta de Renuncia",
+      "title_accepted": "¿Está seguro de eliminar la carta de Renuncia?",
+      "delete_success": "Carta de Renuncia Eliminada",
+      "title_accepted_confirm": "¿Está seguro de aprobar la carta de Renuncia?",
+      "title_revoke_confirm": "¿Está seguro de elimiar la carta de Renuncia?",
+      "approve_success": "Carta de Renuncia Aprobada",
+      "revoke_success": "Carta de Renuncia Eliminada"
+    },
+    "acceptance": {
+      "title": "Cartas de Aceptación",
+      "title_single": "Carta de Aceptación",
+      "title_accepted": "¿Está seguro de eliminar la carta de Aceptación?",
+      "delete_success": "Carta de Aceptación Eliminada",
+      "title_accepted_confirm": "¿Está seguro de aprobar la carta de Aceptación?",
+      "title_revoke_confirm": "¿Está seguro de elimiar la carta de Aceptación?",
+      "approve_success": "Carta de Aceptación Aprobada",
+      "revoke_success": "Carta de Aceptación Eliminada"
+    },
+    "alerts": {
+      "label_error": "Cartas de Renuncias No Cargadas",
+      "label_error_approve": "Cartas de Aceptación No Cargadas",
+      "dni": "Cédula de Ciudadanía",
+      "description": "Motivo",
+      "success": "Cargue exitoso de Cartas de Renuncias",
+      "success_approve": "Cargue exitoso de Cartas de Aceptación"
+    },
+    "viewerdocument": {
+      "title": "Visor de Documentos Cargados",
+      "typeDocument": "Tipo de Documento",
+      "name": "Nombre del Documento",
+      "downloadPath": "Archivo Cargado"
+    },
+    "administrativeActionsViewer": {
+      "title": "Visor de Actuaciones Administrativas",
+      "id": "No.",
+      "fileName": "Nombre del Archivo",
+      "numberResolution": "Número de Resolución",
+      "downloadPath": "Descargar"
+    }
+  },
+  "module_reports": {
+    "title": "Módulo de Reportes",
+    "letters": {
+      "title": "Listado de Cartas Recibidas (Aceptación / Renuncias)",
+      "label_letter_submitted": "Carta Entregada",
+      "label_letter_type": "Tipo de Carta",
+      "label_upload_by": "Cargada Por",
+      "observation": "Observación",
+      "progress_panel": "Reporte de Panel de Avance de Inscripción",
+      "uploaded_photos_filter": "Reporte de Fotos Cargadas de Candidatos Inscritos",
+      "enrollment-tracking-report": "Reporte de Seguimiento de inscripción"
+    },
+    "summary_E6_admitted": {
+      "title": "Reporte de Resumen E6 Ingresados (Resumido / Detallado por Departamento)",
+      "name": "Corporación ó Cargo",
+      "total": "Listas",
+      "notSent": "Preliminar",
+      "sent": "Definitivo",
+      "approve": "Aprobado",
+      "reject": "Rechazada",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "gobInscriptions": "Gobernación",
+      "asaInscriptions": "Asamblea",
+      "alcInscriptions": "Alcaldía",
+      "conInscriptions": "Consejo",
+      "jalInscriptions": "J.A.L",
+      "totalInscriptions": "TOTAL"
+    },
+    "summaryInscription": {
+      "title": "Reporte de Resumen de Inscripción",
+      "total": "Total de Inscripciones",
+      "totalTypeVirtual": "Cantidad de Inscripción Virtuales",
+      "totalTypeManual": "Cantidad de Inscripción Manuales",
+      "nameGroup": "Nombre de la Agrupación Política",
+      "corporationName": "Corporación/Cargo",
+      "circunscriptionsName": "Circunscripción",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "votePreferential": "Opción de Voto",
+      "versionI": "Versión",
+      "voteBlank": "Promotor Voto en Blanco",
+      "stateList": "Estado Lista",
+      "downloadE6": "E6",
+      "downloadE8": "E8",
+      "countTotalCandidats": "Candidatos Inscritos",
+      "candidatesMen": "Hombres",
+      "candidatesWomen": "Mujeres",
+      "createDate": "Fecha Creación",
+      "createBy": "Usuario Creador",
+      "users_dni": "Aprobó",
+      "inscription_type": "Tipo de Inscripción",
+      "devoluciones": "Devoluciones"
+    },
+    "registeredCandidatesByCorporation": {
+      "breadcrumbs": {
+        "title": "Módulo de reportes",
+        "page": "Candidatos inscritos por corporación"
+      },
+      "table": {
+        "corporation": "Corporación/cargo",
+        "department": "Departamento",
+        "municipality": "Municipio",
+        "commune": "Comuna/localidad/corregimiento",
+        "dni": "Número de cédula de ciudadanía",
+        "fullName": "Nombre completo",
+        "groupingPoliticalName": "Nombre de la agrupación política"
+      },
+      "btn_export": "Exportar"
+    },
+    "quantityCandidatesRegisteredGender": {
+      "title": "Reporte Cantidad de candidatos inscritos por Género",
+      "corporationName": "Corporación/cargo",
+      "genderCandidates": "Género",
+      "quantityApprovedCandidates": "Cantidad de Candidatos Aprobados"
+    },
+    "preRegisteredCandidatesPoliticalGrouping": {
+      "title": "Reporte Candidatos Pre-inscritos por Agrupación política",
+      "total": "Total Candidatos",
+      "candidatesMenTotal": "Total Hombres",
+      "candidatesWomenTotal": "Total Mujeres",
+      "typeGroup": "Tipo de Agrupación Política",
+      "nameGroup": "Nombre de la Agrupación Política",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "candidatesMen": "Hombres",
+      "candidatesWomen": "Mujeres",
+      "countTotalCandidats": "Cantidad de Candidatos"
+    },
+    "doubleInscriptionCandidates": {
+      "title": "Reporte Candidatos con Doble Inscripción y Presunción Doble Militancia",
+      "dni": "Número cédula de ciudadanía",
+      "inscriptionId": "inscripción",
+      "names": "Nombres",
+      "surnames": "Apellidos",
+      "status": "Estado",
+      "createdAt": "Fecha de Registro",
+      "updatedAt": "Fecha de Modificación",
+      "updatedBy": "Modificado Por",
+      "createdBy": "Registrado Por",
+      "corporationsName": "Corporación",
+      "circunscriptionsName": "Circunscripción",
+      "groupPoliticalName": "Agrupación Política",
+      "place": "Lugar",
+      "rowField": "Renglón"
+    },
+    "detailPhotosUploadedCandidates": {
+      "title": "Reporte de Fotos Cargadas de Candidatos detallado",
+      "typeGroup": "Tipo de Agrupación Política",
+      "nameGroup": "Nombre de la Agrupación Política",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "nameCorporation": "Corporación / Cargo",
+      "nameCircuscription": "Circunscripción",
+      "rowField": "Renglón",
+      "dni": "Número de cédula de ciudadanía",
+      "firstName": "Primer Nombre",
+      "secondName": "Segundo Nombre",
+      "firstSurName": "Primer Apellido",
+      "secondSurName": "Segundo Apellido",
+      "photo": "Cargo Foto"
+    },
+    "generalDetailedCandidates":{
+      "codeVoteBlank": "Código de la opción de voto en blanco", 
+      "voteBlank": "Descripción de la opción de Voto en Blanco",
+      "quota": "Cuota de Género",
+      "email": "Correo Electrónico",
+      "codeFocusVictim":"Código Población Víctima de Conflicto",
+      "focusVictim":"Descripción Población Víctima de Conflicto",
+      "codeFocusRacial":"Código Grupo Étnico",
+      "codefocusDisability":"Código Ciudadanos con Discapacidad",
+      "codeLgtbiqIdentity":"Código Categorización Según Identidad",
+      "codeFocusLgtbiqOrientation":"Código Categorización Según Orientación",
+      "focusRacial":  "Descripción Grupo Étnico",
+      "focusDisability": "Descripción Ciudadanos con Discapacidad",
+      "lgtbiqIdentity":  "Descripción Categorización Según Identidad",
+      "focusLgtbiqOrientation": "Descripción Categorización Según Orientación",
+      "doubleInscription":"Doble Inscripción",
+      "doubleMilitancia":"Doble Militancia",
+      "title3":"Reporte General y detallado de candidatos",
+      "title2":"Reporte General y detallado de candidatos Entes de Control y Vigilancia",
+      "title": "Reporte General y Detallado de Candidatos Observadores Electorales",
+      "createdAt": "Fecha de la Inscripción",
+      "codeCorporation": "Código Corporación/Cargo",
+      "nameCorporation": "Descripción de la Corporación/Cargo",
+      "codeCircunscrition": "Código de la Circunscripción",
+      "nameCircunscrition": "Descripción de la Circunscripción",
+      "codeDepartment": "Código Departamento",
+      "department": "Descripción del Departamento",
+      "codeMuncipality": "Código Municipio",
+      "muncipality": "Descripción del Municipio",
+      "codeCommune": "Código Comuna/Localidad/Corregimiento",
+      "commune": "Descripción de la Comuna/Localidad/Corregimiento",
+      "namePreferentialVote": "Opción de Voto",
+      "shuffleNumber": "Posición Sorteo",
+      "codeGroupingPoliticalType": "Código Tipo de Agrupación Política",
+      "nameGroupingPoliticalType": "Descripción del Tipo de Agrupación Política",
+      "codeGroupingPolitical": "Código de la Agrupación Política",
+      "nameGroupingPolitical": "Nombre de la Agrupación Política",
+      "row": "Renglón",
+      "dni": "Número de Cédula de Ciudadanía",
+      "firstname": "Primer Nombre",
+      "secondname": "Segundo Nombre",
+      "firstsurname": "Primer Apellido",
+      "secondsurname": "Segundo Apellido",
+      "gender": "Género",
+      "birthdate": "Fecha de Nacimiento",
+      "age": "Edad",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "statusCandidate": "Estado del candidato",
+      "acceptanceMethod": "Forma de Aceptación",
+      "inscriptionStatus":"Estado de la Inscripción",
+      "renuncia":"Renuncias",
+      "revocatoria":"Re.vocatorias",
+      "reject":"No Aceptación",
+      "dateE6":"Fecha en la que se generó el formulario E6",
+      "dateE7":"Fecha en la que se generó el formulario E7",
+      "dataE8":"Fecha en la que se generó el formulario E8",
+      "managerDni":"Número de Cédula de Ciudadanía del Gerente de campaña",
+      "managerNameFull":"Nombres del Gerente de Campaña",
+      "managersurnameFull":"Apellidos del Gerente de Campaña",
+      "celularPhoneManager":"Teléfono del Gerente de Campaña",
+      "emailManager":"Correo Electrónico del Gerente de Campaña",
+      "gender2":"Género"
+    },
+    "candidatesDifferentialApproach":{
+      "title": "Reporte de Candidatos por Enfoque Diferencial",
+      "category": "Categoría",
+      "differential": "Enfoque Diferencial",
+      "quantity": "Cantidad",
+      "categoryApproachDifference":"Categoría Enfoque Diferencial"
+	  }
+  },
+  "list_candidates_dni": {
+    "dni": "Número de Cédula de Ciudadanía",
+    "candidate_dni": "Cédula de Ciudadanía",
+    "name": "Nombres",
+    "surname": "Apellidos",
+    "status": "Estado",
+    "registration_date": "Fecha de Registro",
+    "registered_by": "Registrado por",
+    "modification_date": "Fecha de Modificación",
+    "modification_by": "Modificado por",
+    "grouping_political_name": "Nombre Agrupación Política",
+    "corporation": "Corporación ó Cargo",
+    "circunscription": "Circunscripción",
+    "registration_place": "Lugar de inscripción",
+    "search": "Buscar",
+    "incidents_found": "Sección Datos de Candidato",
+    "breadcrumbs": {
+      "title": "Home",
+      "item_one": "Búsqueda por Número de Cédula del Candidato"
+    }
+  },
+  "candidate_uploaded_photos_report": {
+    "dni": "Número de Cédula de Ciudadanía",
+    "incidents_found": "Resultados de la Búsqueda",
+    "number_registered_candidates": "Cantidad de Candidatos Inscritos",
+    "uploaded_photos": "Fotos Cargadas",
+    "breadcrumbs": {
+      "title": "Home",
+      "item_one": "Reporte de Fotos Cargadas de Candidatos Inscritos"
+    }
+  },
+  "candidate_by_age": {
+    "range_by_age": "Rango por Edad",
+    "title_chart": "Rangos por edades",
+    "breadcrumbs": {
+      "title": "Home",
+      "item_one": "Reporte Candidatos Inscritos por Edad"
+    }
+  },
+  "reports_inscription": {
+    "title": "Reporte de Resumen de Inscripción",
+    "letters": {
+      "virtualRegistrationQuantity": "CANTIDAD DE INSCRIPCIÓN VIRTUALES",
+      "manualRegistrationQuantity": "CANTIDAD DE INSCRIPCIÓN PRESENCIALES",
+      "totalInscriptions": "TOTAL DE INSCRIPCIONES",
+      "groupingPoliticalName": "NOMBRE DE LA AGRUPACIÓN POLÝTICA",
+      "corporationName": "CORPORACIÓN/CARGO",
+      "circunscriptionName": "CIRCUNSCRIPCIÓN",
+      "department": "DEPARTAMENTO",
+      "municipality": "MUNICIPIO",
+      "commune": "COMUNA/LOCALIDAD/CORREGIMIENTO",
+      "preferentialVote": "OPCIÓN DE VOTO",
+      "versions": "VERSIÓN",
+      "promotorVotoBlanco": "PROMOTOR VOTO EN BLANCO",
+      "state": "ESTADO LISTA",
+      "e6": "E6",
+      "e7": "E8",
+      "registeredCandidates": "CANDIDATOS INSCRITOS",
+      "men": "HOMBRES",
+      "women": "MUJERES",
+      "createDate": "FECHA CREACIÓN",
+      "userName": "USUARIO CREADOR",
+      "aproveDate": "APROBÓ",
+      "inscriptionsReturns": "TIPO DE INSCRIPCIÓN"
+    }
+  },
+  "acceptance_rejection": {
+    "title": "Reporte de Aceptación o Rechazo de Candidaturas",
+    "letters": {
+      "typePoliticalGrouping": "Tipo de Agrupación Política",
+      "namePoliticalGroup": "Nombre de la Agrupación Política",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna/Localidad/Corregimiento",
+      "corporationName": "Corporación/Cargo",
+      "numberRegisteredCandidates": "Cantidad de Candidatos Inscritos",
+      "numberCandidatesAcceptedCandidacy": "Cantidad de Candidatos Aceptaron Candidatura",
+      "uploadedLettersAcceptance": "Cartas de Aceptación Cargadas",
+      "numberCandidatesDidNotAcceptCandidacy": "Cantidad de Candidatos No Aceptaron Candidatura",
+      "uploadedResignationLetters": "Cartas de Renuncia cargadas",
+      "numberEISAcceptanceCandidates": "Cantidad de Candidatos Aceptación EIS",
+      "numberCandidatesFacialAcceptance": "Cantidad de Candidatos Aceptación Facial"
+    }
+  },
+  "guide_electoral": {
+    "title": "Listado de Anotaciones de Tarjetas y Guías Electorales",
+    "Data": {
+      "corporationName": "Corporación/Cargo",
+      "circunscriptionName": "Circunscripción",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna/Localidad/Corregimiento",
+      "typeDesing": "Tipo de Diseño",
+      "detailDesing": "Detalle/Diseño"
+    }
+  },
+  "progress_panel": {
+    "title": "Reporte de Panel de Avance de Inscripción",
+    "letters": {
+      "numberPoliticalGroups": "Cantidad de Agrupaciones Políticas",
+      "sectionE6": "Sección E6:",
+      "preliminaries": "Preliminares",
+      "ultimates": "Definitivos",
+      "approved": "Aprobados",
+      "sectionE7": "Sección E7:",
+      "sectionE8": "Sección E8:",
+      "e8quantity": "Cantidad de E8",
+      "reportDetailPreliminaries": "Detalle del Reporte - Preliminares",
+      "reportDetailDefinitive": "Detalle del Reporte - Definitivo",
+      "reportDetailApproved": "Detalle del Reporte - Aprobados",
+      "groupingPoliticalNameCode": "Nombres y códigos de las agrupaciones políticas",
+      "documentVersion": "Versión Documento"
+    }
+  },
+  "sketches_pending": {
+    "breadcrumbs": {
+      "page": "Administración",
+      "title": "Bocetos de Tarjetas pendientes por revisión"
+    },
+    "not_operation": "No es posible realizar la operación",
+    "table": {
+      "corporation": "Corporación / Cargo",
+      "circunscription": "Circunscripción",
+      "departament": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "drawn": "Sorteado",
+      "state": "Estado"
+    },
+    "btn_download": {
+      "excel": "Descargar en excel",
+      "csv": "Descargar en CSV"
+    }
+  },
+  "design": {
+    "module_name": "Módulo de Diseño",
+    "pendings": {
+      "page_title": "Diseño pendientes por aprobar"
+    },
+    "upload": {
+      "page_title": "Cargue de Diseño de Guías y Tarjetas Electorales",
+      "file_max_size": "Tamaño máximo de archivo {limit}",
+      "file_types": "Tipo de archivo soportado {type}",
+      "btn_upload": "Cargar Diseños"
+    },
+    "approve": {
+      "page_title": "Aprobación de Diseño de Guías y Tarjetas Electorales",
+      "approve_title": "Aprobar Diseño",
+      "reject_title": "Devolver Diseño",
+      "observation": "Observación",
+      "file_max_size": "Tamaño máximo de archivo {limit}",
+      "file_types": "Tipo de archivo soportado {type}",
+      "btn_approve": "Aprobar",
+      "btn_reject": "Devolver",
+      "btn_cancel": "Cancelar"
+    }
+  },
+  "assign_random_position": {
+    "breadcrumbs": {
+      "title": "Agrupaciones políticas",
+      "page": "Asignar posición de sorteo"
+    },
+    "form": {
+      "assign_random_position": "INFORMACIÓN DEL SORTEO DE LA AGRUPACIÓN POLÍTICA",
+      "draw_voting_option": "SORTEAR OPCIÓN DE VOTO",
+      "groupingPoliticalId": "Código agrupación política",
+      "groupingPoliticalName": "Nombre agrupación política",
+      "groupingPoliticalPosition": "Posición",
+      "preferredVotingOptionPosition": "Prioridad opción de voto para PREFERENTE",
+      "NonPreferentialVotingOptionPosition": "Prioridad opción de voto para NO PREFERENTE",
+      "btn_assign": "Asignar",
+      "btn_reset": "Limpiar",
+      "btn_reserve_position_masive": "Reversar posiciones"
+    },
+    "table": {
+      "item": "Item",
+      "groupingPoliticalName": "Nombre de la Agrupación Política",
+      "groupingPoliticalType": "Tipo de Agrupación Política",
+      "corporation": "Corporación/Cargo",
+      "circunscription": "Circunscripción",
+      "location": "Lugar de inscripción",
+      "preferentialVote": "Opción de voto",
+      "position": "Posición"
+    },
+    "swal": {
+      "title": "¿Estás seguro?",
+      "text_confirm_preferred": "Si selecciona la opción de voto PREFERENTE como su prioridad, tenga en cuenta que en el diseño de la tarjeta electoral se le dará prioridad a dicha opción y se colocará en una posición destacada.",
+      "text_confirm_nonPreferential": "Si selecciona la opción de voto NO PREFERENTE como su prioridad, tenga en cuenta que en el diseño de la tarjeta electoral se le dará prioridad a dicha opción y se colocará en una posición destacada.",
+      "not_operation": "No se pudo completar la acción, por favor intente más tarde.",
+      "description_reverse": "Al presionar 'SI' todas las agrupaciones políticas quedarán disponibles para asignar una nueva posición",
+      "msg_confirmation": "Operación realizada correctamente",
+      "msg_not_position": "No se pudo completar la acción. La posición ya está asignada a otra agrupación política.",
+      "msg_invalid_position": "No se puede asignar la posición a la agrupación política. Posición inválida.",
+      "msg_priority_preferente": "No se pudo completar la acción. Debe asignar la posición a las agrupaciones políticas con opción de voto 'PREFERENTE'",
+      "msg_priority_NoPreferente": "No se pudo completar la acción. Debe asignar la posición a las agrupaciones políticas con opción de voto 'NO PREFERENTE'",
+      "question_cleanPosition": "No se puede asignar la posición a la agrupación política. La posición ya se encuentra asignada a otra agrupación. ¿Desea Continuar con la asignación?"
+    }
+  },
+  "e6_pending_enerate_e8": {
+    "module": "Módulo de Formularios",
+    "title": "E6 Pendientes por generar E8"
+  },
+  "generate_e8": {
+    "title": "Generación Formularios E8",
+    "btn_generate": "Generar Formularios E8"
+  },
+  "inscription_final": {
+    "title_preview": "Previsualizar E8",
+    "title_view": "Visualizar E8 Generados"
+  },
+  "candidates_enrolled_age": {
+    "title": "Reporte Candidatos Inscritos por edad",
+    "letters": {
+      "age_range": "Rango de Edad",
+      "Under_25_years": "Menor de 25 años",
+      "25_30_years": "25 - 30 años",
+      "31_35_years": "31 - 35 años",
+      "36_40_years": "36 - 40 años",
+      "41_45_years": "41 - 45 años",
+      "46_50_years": "46 - 50 años",
+      "51_55_years": "51 - 55 años",
+      "56_60_years": "56 - 60 años",
+      "61_65_years": "61 - 65 años",
+      "66_70_years": "66 - 70 años",
+      "71_75_years": "71 - 75 años",
+      "76_80_years": "76 - 80 años",
+      "Over_80_years": "Mayor de 80 años"
+    }
+  },
+  "design_list_reject": {
+    "breadcrumbs": {
+      "title": "Módulo de diseño",
+      "page": "Listado de diseños devueltos"
+    },
+    "filter": {
+      "status": "Estado",
+      "fileType": "Tipo de archivo"
+    },
+    "table": {
+      "corporation": "Corporación / Cargo",
+      "circunscription": "Circunscripción",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "state": "Estado",
+      "observation": "Observación/Soporte",
+      "fileType": "Tipo de archivo",
+      "version": "Versión",
+      "archive": "Archivo",
+      "date": "Fecha de devolución"
+    }
+  },
+  "list_designs_approval": {
+    "breadcrumbs": {
+      "title": "Módulo de diseño",
+      "page": "Visualizar Tarjetas y guías Electorales aprobadas"
+    },
+    "filter": {
+      "status": "Estado",
+      "fileType": "Tipo de archivo"
+    },
+    "table": {
+      "corporation": "Corporación / Cargo",
+      "circunscription": "Circunscripción",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "state": "Estado",
+      "observation": "Observación/Soporte",
+      "fileType": "Tipo de archivo",
+      "version": "Versión",
+      "archive": "Archivo",
+      "date": "Fecha de aprobación",
+      "actions": "Acción"
+    }
+  },
+  "enrollment_tracking_report": {
+    "title": "Reporte de Seguimiento de inscripción",
+    "letters": {
+      "creation_user": "Usuario de creación",
+      "Creation_date": "Fecha de creación",
+      "form_status": "Estado del formulario",
+      "e6_support_charged": "Soporte de E6 cargados",
+      "Form_E6": "Formulario E6",
+      "Barcode": "Código de barra",
+      "state": "Estado",
+      "date_last_modified": "Fecha última modificación",
+      "document_generated_E7": "documento generado de E7",
+      "e7_support_charged": "Soporte de E7 cargados",
+      "registration_status": "Estado inscripción",
+      "Information_E6": "Información E6:",
+      "Information_E7": "Lista de modificaciones E7:",
+      "Information_E8": "Información E8:"
+    }
+  },
+  "alertUserAux": {
+    "validate": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "code": "Código",
+      "nameUser": "Nombre de Usuario",
+      "department": "Departamento",
+      "municipality": "Municipio"
+    }
+  },
+  "generate_sketches": {
+    "e8_info": "INFORMACIÓN DE FORMULARIOS E8",
+    "breadcrumbs": {
+      "title": "Módulo de bocetos",
+      "page": "Generar bocetos de tarjetas"
+    },
+    "swal": {
+      "msg_success_generate": "Bocetos generado exitosamente",
+      "msg_sketches_exists": "Ya hay un boceto generado",
+      "info_noPhoto": "Si en su boceto no aparece el logo o símbolo de la agrupación política o la foto del candidato es porque aún no se ha cargado en el sistema."
+    },
+    "form": {
+      "btn_generate": "Generar bocetos"
+    },
+    "table": {
+      "corporation": "Corporación/Cargo",
+      "totalGroupingPolitical": "Total Agrupaciones Inscritas",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "totalMissingGenerateE8": "Faltantes por Generar E8",
+      "totalRaffledGroupings": "Total Agrupaciones Sorteadas"
+    }
+  },
+  "cards_printing": {
+    "breadcrumbs": {
+      "title": "Módulo de diseño",
+      "page": "Consulta aprobación tarjetas para impresión"
+    },
+    "filter": {
+      "status": "Estado",
+      "fileType": "Tipo de archivo"
+    },
+    "btn_exportModify": "Tarjetas modificadas",
+    "bntExcel": "XLS",
+    "bntCSV": "CSV",
+    "btnExportTitle": "Exportar",
+    "table": {
+      "item": "Item",
+      "type": "Tipo de Archivo",
+      "corporation": "Corporación / Cargo",
+      "circunscription": "Circunscripción",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "state": "Estado",
+      "observation": "Observación",
+      "approvedDate": "Fecha aprobado / devuelto",
+      "version": "Versión"
+    }
+  },
+  "print_sketch": {
+    "breadcrumbs": {
+      "title": "Módulo de bocetos",
+      "page": "Visualizar bocetos tarjeta electorales"
+    },
+    "filter": {
+      "btn_viewSketch": "Visualizar boceto"
+    },
+    "table": {
+      "corporation": "Corporación / Cargo",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna / Localidad / Corregimiento",
+      "actions": "Acciones"
+    }
+  },
+  "card_sketch_approval": {
+    "breadcrumbs": {
+      "title": "Módulo de bocetos",
+      "page": "Revisión de bocetos de tarjetas"
+    },
+    "btn_approveSketchMasive": "Revisión Masiva de Bocetos",
+    "swal": {
+      "questionMasive": "Estás seguro que desea marcar como revisado estos bocetos?",
+      "question": "Estás seguro que desea marcar como revisado este boceto?",
+      "msg_approveMasive": "Revisión masiva de bocetos exitoso",
+      "msg_approve": "Boceto revisado exitosamente",
+      "msg_reject": "Boceto rechazado exitosamente"
+    }
+  },
+  "type_approved": {
+    "virtual": "Aprobación Virtual",
+    "manual": "Aprobación Manual"
+  },
+  "candidate": {
+    "title": "Búsqueda por Número de cédula del candidato",
+    "sub_title": "Sección datos del candidato",
+    "name_search": "Número de Cédula de Ciudadanía",
+    "table": {
+      "dni": "Número de Cédula de Ciudadanía",
+      "names": "Nombres",
+      "last_name": "Apellidos",
+      "status": "Estado",
+      "created_at": " Fecha de registro",
+      "created_by": "Registrado por",
+      "update_at": "Fecha de modificación",
+      "update_by": " Modificado por",
+      "name_grounping_political": " Nombre de la agrupación política",
+      "corporation": "Corporación/Cargo",
+      "circunscription": "Circunscripción",
+      "place": " Lugar de inscripción"
+    },
+    "candidate_corporation": {
+      "title": "Reporte de Candidatos por Corporación",
+      "table": {
+        "amount": "Cantidad de candidatos aprobados",
+        "corporation": "Corporación/Cargo"
+      },
+      "warning": {
+        "title_main": " No ha filtrado campos para Reporte de candidatos por corporación",
+        "title_second": " Filtre la información segun el campo requerido para obtener el reporte solicitado"
+      },
+      "button": "Buscar"
+    }
+  },
+  "logo_symbol": {
+    "historical_rejections": {
+      "breadcrumbs": {
+        "title": "Módulo de documentos",
+        "page": "Históricos de rechazos de logo o símbolos"
+      },
+      "table": {
+        "logo": "Logo o símbolo cargado",
+        "state": "Estado",
+        "createdDate": "Fecha y hora",
+        "createdBy": "Usuario",
+        "resolutionName": "Resolución nombre",
+        "resolutionLogo": "Resolución logo",
+        "observation": "Observación",
+        "downloadResolutionName": "Descargar resolución nombre",
+        "downloadResolutionLogo": "Descargar resolución logo"
+      }
+    },
+    "generate_approval": {
+      "breadcrumbs": {
+        "title": "Módulo de documentos",
+        "page": "Aprobación y rechazo de logo o símbolo y nombre de agrupación política"
+      },
+      "swal": {
+        "msg_no_logo": "No se pudo obtener el logo o símbolo",
+        "no_radicate": "No existe un número de radicado asociado a la información solicitada",
+        "success_approve": "Logo o símbolo y nombre de la agrupación política fueron aprobados",
+        "reject_approve": "Logo o símbolo y nombre de la agrupación política fueron rechazados"
+      },
+      "formApprove": {
+        "radicateNumber": "NÚMERO DE RADICADO",
+        "resolutionNumber": "Número de la resolución",
+        "resolutionDate": "Fecha de la resolución",
+        "magistrateOffice": "Despacho del magistrado",
+        "filesAppeal": "Presenta recurso",
+        "downloadLogo": "Descargar logo o símbolo",
+        "viewDocuments": "Ver documentos",
+        "viewApprovals": "Ver aprobaciones",
+        "btn_approve": "Aprobar",
+        "btn_reject": "Rechazar"
+      },
+      "tableCandidates": {
+        "dni": "Número de cédula",
+        "fullName": "Nombre completo",
+        "email": "Correo electrónico",
+        "gender": "Género"
+      },
+      "tableDocuments": {
+        "documentsName": "Nombre de documento",
+        "uploadDate": "Fecha de cargue",
+        "action": "Acción"
+      }
+    }
+  },
+  "candidates_withdrawal_e7": {
+    "title": "Reporte Candidatos Motivo Retiro E7",
+    "letters": {
+      "section_E7_reason": "Sección E7 Motivo de retiro:",
+      "resignation": "Renuncia",
+      "no_Acceptance": "No Aceptación",
+      "death": "Muerte",
+      "version_e7": "Versión E7",
+      "reportDetailRenuncia": "Detalle del Reporte - Renuncia",
+      "reportDetailNoAcetacio": "Detalle del Reporte - No Aceptación",
+      "reportDetailMuerte": "Detalle del Reporte - Muerte"
+    }
+  },
+  "modify_electoral_authorities": {
+    "title": "Modificar Información Autoridades Electorales",
+    "letters": {
+      "number_authorities": "Cantidad de Autoridades"
+    }
+  },
+  "update_local_ani": {
+    "breadcrumbs": {
+      "title": "Módulo de opciones",
+      "page": "Actualizar ani local"
+    },
+    "formFind": {
+      "dni": "Número de documento"
+    },
+    "form": {
+      "firstName": "Primer nombre",
+      "secondName": "Segundo nombre",
+      "firstSurname": "Primer apellido",
+      "secondSurname": "Segundo apellido",
+      "dateOfIssueOfTheDocument": "Fecha de expedición del documento",
+      "validity": "Vigencia",
+      "dateBirth": "Fecha de nacimiento",
+      "gender": "Género"
+    }
+  },
+  "upload_certification_signature": {
+    "breadcrumbs": {
+      "title": "Módulo de aceptaciones",
+      "page": "Cargue de certificaciones de cumplimientos de firmas"
+    },
+    "table": {
+      "corporation": "Corporación/cargo",
+      "department": "Departamento",
+      "municipality": "Municipio",
+      "commune": "Comuna/localidad/corregimiento",
+      "signaturesRequired": "Firmas mínimas requeridas",
+      "uploadCertificate": "Cargar certificado",
+      "didYouMeetTheMinimumNumberOfSignatures": "¿Cumplió con el mínimo de firmas requeridas?"
+    }
+  },
+  "manage_notes": {
+    "breadcrumbs": {
+      "title": "Módulo de opciones",
+      "page": "Administrar notas"
+    },
+    "table": {
+      "corporation": "Corporación",
+      "groupingPoliticalType": "Tipo de agrupación política",
+      "circunscription": "Circunscripción",
+      "description": "Descripción",
+      "actions": "Acciones"
+    },
+    "swal": {
+      "text_active": "¿Estás seguro de activar la nota seleccionada?",
+      "text_inactive": "¿Estás seguro de inactivar la nota seleccionada?",
+      "msg_success": "Operación realizada correctamente"
+    }
+  },
+  "view_user_manuals_videos": {
+    "title": "Visualizar Manuales de Usuario y Vídeos",
+    "letters": {
+      "user_manual": "Manual de Usuario",
+      "video_tutorial": "Videos Tutoriales"
+    }
+  },
+  "logos_pending_approval": {
+    "title": "Reporte de Logos Pendientes de Aprobación",
+    "letters": {
+      "date_shipment_spite": "Fecha de Envío a despacho CNE",
+      "application_status": "Estado de la Solicitud"
+    }
+  },
+  "logo_approved_rejected": {
+    "title": "Reporte de Logos Aprobados y rechazados",
+    "letters": {
+      "no_of_Resolution": "No. de Resolución",
+      "date_Resolution": "Fecha de Resolución",
+      "office_magistrate": "Despacho de Magistrado",
+      "resenta_recurso": "Presenta Recurso Si o No",
+      "aprueba_rechaza": "Aprueba o Rechaza",
+      "imagen_logo_símbolo": "Imagen del logo o Símbolo"
+    }
+  },
+  "preregistered_candidates": {
+    "title": "Reporte Candidatos Pre-inscritos por Corporación"
+  },
+  "summary_signed_OMD": {
+    "title": "Resumen de OMD Firmadas",
+    "letters": {
+      "titleDetalle": "Detalle de OMD Pendientes por Firmar",
+      "total_OME": "Total OMD",
+      "signed": "Firmadas",
+      "Earrings_sign": "Pendientes por Firmar",
+      "No_OMD": "No. OMD",
+      "OMD_reason": "Motivo OMD",
+      "creation_user": "Usuario de creación",
+      "creation_date": "Fecha de creación"
+    }
+  }, 
+   "candidate_generationList_report": {
+    "title": "Generación Archivo de Armado de Candidatos"
+    
+  }
+}

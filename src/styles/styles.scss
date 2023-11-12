@@ -1,0 +1,125 @@
+// Write your overrides
+
+@use "./VerticalNav.scss";
+@use "./VList.scss";
+@use "./Form.scss";
+@use "./Ribbon.scss";
+@use "./Swalert2.scss";
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.text-075 {
+  font-size: 0.75rem !important;
+}
+
+.v-btn {
+  text-transform: none !important;
+}
+
+.btn-primary-swal {
+  background-color: #003057 !important;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(0, 48, 87, 50%) !important;
+  }
+}
+
+// Radio Button Label Inline Vote Option
+.radiobutton__label-inline {
+  .v-input__control {
+    flex-direction: row;
+
+    .v-label {
+      margin-inline-end: 1rem;
+    }
+  }
+}
+
+// Order List
+ol.order-list {
+  list-style: decimal;
+  margin-inline-start: 1.5rem;
+
+  li {
+    margin-block-end: 1rem;
+
+    div,
+    span {
+      margin-inline-start: 0.5rem;
+    }
+
+    &::marker {
+      font-weight: bold;
+    }
+  }
+}
+
+.match-height {
+  > [class*="col"] {
+    display: flex;
+    flex-flow: column;
+
+    > .v-card {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.v-list-item.v-list-item__no-overflow {
+  .v-list-item-title {
+    white-space: inherit;
+  }
+
+  .v-list-item-subtitle {
+    -webkit-line-clamp: none;
+  }
+}
+
+.line-height {
+  line-height: 1rem;
+}
+
+.table-bordered thead th.border,
+.table-bordered thead td.border {
+  border: solid 0.5px rgba(75, 70, 92, 12%) !important;
+}
+
+.container-radio,
+.container-radio div.v-selection-control-group {
+  margin-inline: auto !important;
+}
+
+.v-theme--light .bg-info-light {
+  background: #dae8f1;
+}
+
+.v-theme--light .bg-orange-light {
+  background: #fee4cb;
+}
+
+.v-theme--light .bg-success-light {
+  background: #daf2e4;
+}
+
+.text-space > .v-btn__content {
+  white-space: break-spaces !important;
+}
+
+.v-breadcrumbs-item.v-breadcrumbs-item--disabled {
+  color: #030303;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.v-table__wrapper {
+  table {
+    thead {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+
+      background: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+  }
+}
