@@ -42,19 +42,29 @@ const signIn = async () => {
   if (!valid) return false
   isLoading.value = true
 
-  const recaptchaToken = await recaptcha.execute("Login")
-
-
   try {
-    const requestBody = {
+    const requestBody = { 
       username: username.value,
       password: password.value,
-      recaptcha_token: recaptchaToken,
+      //recaptcha_token: recaptchaToken,
     }
 
-    const response = await useJwt.login(requestBody)
+    const   response   = await useJwt.login(requestBody)
+    
+    if(response.data.accessToken == null){
+      router.replace({ name: "second-page" }).then(() => {
+      console.log('enviar index')
+      isLoading.value = false
+    //  recaptcha.hide()
+    })
+    }
 
-    const {
+    console.log(response.data.accessToken,'response');
+    //router.push({ name: "second-page" })
+    console.log('hola ');
+
+  //  isLoading.value = false
+    /*const {
       access_token: accessToken,
       refresh_token: refreshToken,
       emulated,
@@ -72,16 +82,28 @@ const signIn = async () => {
       .map(e => ({ ...e }))
       .concat(initialAbility)
 
-    ability.update(abilities)
+    ability.update(abilities)*/
 
-    router.replace({ name: "index" }).then(() => {
+    /*router.replace({ name: "index" }).then(() => {
+      console.log('enviar index')
       isLoading.value = false
       recaptcha.hide()
-    })
-  } catch (error) {
+    })*/
+  } catch (error) { 
+    
     isLoading.value = false
     errorSignIn.hasError = true
     errorSignIn.type = "warning"
+
+    if (error.response && error.response.status <= 500) {
+      const { message } = error.response.data
+
+     // Swal.fire({ icon: "warning", text: message })
+     console.log('dhajkshdkahsd :)',message);
+    } else {
+   //   Swal.fire({ icon: "warning", text: "No fue posible ejecutar la acción, por favor contacte a la mesa de ayuda." })
+   console.log('hdajahsd :(');
+    }
 
     if (!navigator.onLine) {
       errorSignIn.message = "Por favor, valide su conexión a internet."

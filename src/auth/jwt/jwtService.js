@@ -119,11 +119,27 @@ export default class JwtService {
   }
 
   login(...args) {
-    return this.axiosIns.post(this.jwtConfig.loginEndpoint, ...args).then(res => {
-      console.log(res);
-    }).catch(err => {
-      console.log(err.response);
-    });
+    //console.log('hola entre ', ...args )
+    // return this.axiosIns.post(this.jwtConfig.loginEndpoint, ...args).then(res => {
+    // //  console.log(res,'res');
+    // }).catch(err => {
+    //   console.log(err.response);
+    // });
+
+    try {
+      const respuesta =  this.axiosIns.post(this.jwtConfig.loginEndpoint, ...args)
+      // Realiza cualquier procesamiento adicional si es necesario
+      return respuesta  // Retorna los datos de la respuesta
+    } catch (error) {
+      if (error.response) {
+        console.log("Error de respuesta:", error.response.data)
+      } else if (error.request) {
+        console.log("Error de solicitud:", error.request)
+      } else {
+        console.log("Error general:", error.message)
+      }
+      throw error  // Puedes lanzar el error nuevamente si es necesario
+    }
   }
 
   register(...args) {

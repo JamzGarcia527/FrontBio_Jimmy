@@ -18,7 +18,7 @@ import { VueQueryPlugin } from '@tanstack/vue-query'
 
 loadFonts()
 
-import '@/utils/securityAkamai'
+//import '@/utils/securityAkamai'
 
 // import '@/@fakedb'
 

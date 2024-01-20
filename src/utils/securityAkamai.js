@@ -1,4 +1,4 @@
-const securityAkamai = () => {
+/*const securityAkamai = () => {
   const randomString = len => {
     const length = Number(len) || 8
     const string = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
@@ -31,3 +31,4 @@ const securityAkamai = () => {
 }
 
 securityAkamai()
+*/
