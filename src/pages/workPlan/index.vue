@@ -102,14 +102,12 @@ const onCancelE7 = form => {
   const formData = new FormData()
 
   formData.append("item", form.item)
-  formData.append("workPlan", form.workPlan)
+  formData.append("workPlanName", form.workPlanName)
   
   console.log("form data", formData)
 
 
-  axios.post('/workPlain/create', formData, {
-    headers: { 'Content-Type': 'multipart/form-data' },
-  }).then(() => {
+  axios.post('/workPlan/create', formData).then(() => {
     showModal.value = false
     isLoading.value = false
 

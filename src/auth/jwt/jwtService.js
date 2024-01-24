@@ -22,7 +22,10 @@ export default class JwtService {
     this.axiosIns.interceptors.request.use(
       config => {
         // Get token from localStorage
+        
         const accessToken = this.getToken()
+
+        console.log("token", accessToken)
 
         // If token is present add it to request's Authorization Header
         if (accessToken) {
@@ -127,9 +130,8 @@ export default class JwtService {
     // });
 
     try {
-      const respuesta =  this.axiosIns.post(this.jwtConfig.loginEndpoint, ...args)
       // Realiza cualquier procesamiento adicional si es necesario
-      return respuesta  // Retorna los datos de la respuesta
+      return this.axiosIns.post(this.jwtConfig.loginEndpoint, ...args)  // Retorna los datos de la respuesta
     } catch (error) {
       if (error.response) {
         console.log("Error de respuesta:", error.response.data)

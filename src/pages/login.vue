@@ -50,8 +50,12 @@ const signIn = async () => {
       //recaptcha_token: recaptchaToken,
     }
 
-    const   response   = await useJwt.login(requestBody)
+    const  response  = await useJwt.login(requestBody)
+
+    console.log('response',response.data.token)
     
+    useJwt.setToken(response.data.token)
+
     if(response.data.accessToken == null){
       router.replace({ name: "home-page" }).then(() => {
         console.log('enviar index')

@@ -35,20 +35,20 @@ const { showModal, labelSubmit, labelCancel, isLoading } = toRefs(props)
 const { t } = useI18n()
 
 const form = reactive({
-  itemId: null,
-  workPlain: null,
+  item: null,
+  workPlanName: null,
 })
 
 const formClear = reactive({
-  itemId: null,
-  workPlain: null,
+  item: null,
+  workPlanName: null,
 })
 
 const rules = computed(() => ({
-  itemId: {
+  item: {
     maxLength: helpers.withMessage(t('validations.field_max', { count: maxCantidad }), maxLength(maxCantidad)),
   },
-  workPlain: {
+  workPlanName: {
     required: helpers.withMessage(t('validations.support_required'), required),
   },
 }))
@@ -89,24 +89,24 @@ const handlerSubmit = () => {
             <VRow justify="center">
               <VCol cols="6">
                 <VTextField
-                  v-model="form.itemId"
+                  v-model="form.item"
                   :disabled="isLoading"
                   :label="$t('tabSummary_e7.cancel.item')"
-                  :error-messages="$v.itemId.$errors[0]?.$message"
+                  :error-messages="$v.item.$errors[0]?.$message"
                   :counter="maxCantidad"
                   rows="2"
-                  @input="$v.itemId.$touch()"
+                  @input="$v.item.$touch()"
                 />
               </VCol>
               <VCol cols="6">
                 <VTextField
-                  v-model="form.workPlain"
+                  v-model="form.workPlanName"
                   :disabled="isLoading"
-                  :label="$t('tabSummary_e7.cancel.workPlain')"
-                  :error-messages="$v.workPlain.$errors[0]?.$message"
+                  :label="$t('tabSummary_e7.cancel.workPlanName')"
+                  :error-messages="$v.workPlanName.$errors[0]?.$message"
                   :counter="maxCantidad"
                   rows="2"
-                  @input="$v.workPlain.$touch()"
+                  @input="$v.workPlanName.$touch()"
                 />
               </VCol>
             </VRow>
