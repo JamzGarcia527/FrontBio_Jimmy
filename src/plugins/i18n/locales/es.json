@@ -220,13 +220,15 @@
     "btn_clear": "Limpiar",
     "divipolePermissions": "Permisos de divipole",
     "breadcrumbs": {
-      "title": "Módulo de Usuarios",
+      "title": "Módulo Inicial",
       "edit": "Editar usuario",
       "users": "Administrar Usuarios",
       "create_user": "Crear usuario",
+      "create_work_plain":"Crar Plan de Trabajo",
       "create_user_aux": "Crear usuario auxiliar",
       "upload_user_file": "Cargar Archivo de Usuarios",
-      "differential_focus": "Administrar Campo Enfoque Diferencial"
+      "differential_focus": "Administrar Campo Enfoque Diferencial",
+      "work_plain":"Plan de Trabajo"
     },
     "upload": {
       "title_card": "Cargue Masivo de Usuarios",
@@ -246,18 +248,9 @@
       "total_error": "Errores"
     },
     "listUserAux": {
-      "userCode": "Código de usuario",
-      "userName": "Nombre de Usuario",
-      "email": "Correo Electrónico",
-      "roleName": "Perfil de Usuario",
-      "groupingPoliticalNameType": "Tipo de Agrupación Política",
-      "department": "Departamento",
-      "municipality": "Municipio",
-      "status": "Activo",
-      "e6Quantity": "Cantidad de E6",
-      "e7Quantity": "Cantidad de E7",
-      "filter": "Filtro",
-      "nameFilter": "Nombre"
+      "item": "Item",
+      "nameWorkPlain": "Plan de Trabajo",
+      "actions": "Acciones"
     }
   },
   "OMD": {
@@ -765,9 +758,10 @@
     },
     "cancel": {
       "title_card": "Anular Formulario E7",
-      "motive": "Motivo de la Anulación",
+      "item": "item",
+      "workPlain": "Plan de Trabajo",
       "support": "Soporte",
-      "success_cancel": "Anulación Exitosa"
+      "success_send": "Información Guardada Exitosamente"
     }
   },
   "upload_logo": {

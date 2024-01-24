@@ -46,24 +46,27 @@ const signIn = async () => {
     const requestBody = { 
       username: username.value,
       password: password.value,
+
       //recaptcha_token: recaptchaToken,
     }
 
     const   response   = await useJwt.login(requestBody)
     
     if(response.data.accessToken == null){
-      router.replace({ name: "second-page" }).then(() => {
-      console.log('enviar index')
-      isLoading.value = false
-    //  recaptcha.hide()
-    })
+      router.replace({ name: "home-page" }).then(() => {
+        console.log('enviar index')
+        isLoading.value = false
+
+        //  recaptcha.hide()
+      })
     }
 
-    console.log(response.data.accessToken,'response');
-    //router.push({ name: "second-page" })
-    console.log('hola ');
+    console.log(response.data.accessToken,'response')
 
-  //  isLoading.value = false
+    //router.push({ name: "home-page" })
+    console.log('hola ')
+
+    //  isLoading.value = false
     /*const {
       access_token: accessToken,
       refresh_token: refreshToken,
@@ -98,11 +101,11 @@ const signIn = async () => {
     if (error.response && error.response.status <= 500) {
       const { message } = error.response.data
 
-     // Swal.fire({ icon: "warning", text: message })
-     console.log('dhajkshdkahsd :)',message);
+      // Swal.fire({ icon: "warning", text: message })
+      console.log('dhajkshdkahsd :)',message)
     } else {
-   //   Swal.fire({ icon: "warning", text: "No fue posible ejecutar la acción, por favor contacte a la mesa de ayuda." })
-   console.log('hdajahsd :(');
+      //   Swal.fire({ icon: "warning", text: "No fue posible ejecutar la acción, por favor contacte a la mesa de ayuda." })
+      console.log('hdajahsd :(')
     }
 
     if (!navigator.onLine) {

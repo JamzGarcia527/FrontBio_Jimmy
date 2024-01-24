@@ -370,15 +370,7 @@ const handlerApprove = () => {
             transition="dialog-bottom-transition"
             persistent
           >
-            <template #activator="{ props: dialogProps }">
-              <VBtn 
-                v-bind="dialogProps" 
-                prepend-icon="tabler-file-text"
-                block
-              >
-                {{ t('tabSummary_e7.approve_request.preview_e7') }}
-              </VBtn> 
-            </template>
+            <p>Holaaaaa</p>
 
             <!-- Dialog close btn -->
             <DialogCloseBtn @click="() => dialog = false" />

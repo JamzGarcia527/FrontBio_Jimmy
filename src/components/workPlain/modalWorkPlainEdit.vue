@@ -1,0 +1,138 @@
+<script setup>
+import banner from '@images/pages/dialog-banner-sm.webp'
+import { toRefs, reactive, computed } from 'vue'
+import { useI18n } from 'vue-i18n' 
+import { useVuelidate } from "@vuelidate/core" 
+import { helpers, maxLength, required } from '@vuelidate/validators'
+import Swal from '@/plugins/sweetalert2'
+
+const props = defineProps({
+  showModalEdit: {
+    type: Boolean,
+    default: true,
+  },
+  labelSubmit: {
+    type: String,
+    default: "Guardar Plan",
+  },
+  labelCancel: {
+    type: String,
+    default: "Cancelar",
+  },
+  isLoading: {
+    type: Boolean,
+    default: false,
+  },
+  editData: {
+    type: Array,
+    required: true,
+  },
+})
+
+const emit = defineEmits(['closeModal', 'cancelE7', 'openModal'])
+ 
+const dataEdit = ref(props.editData)
+ 
+console.log("props", dataEdit)
+
+const maxCantidad = 1000
+
+const { showModalEdit, labelSubmit, labelCancel, isLoading } = toRefs(props)
+
+const { t } = useI18n()
+
+const form = reactive({
+  item: dataEdit,
+  workPlan: null,
+})
+
+const formClear = reactive({
+  item: null,
+  workPlan: null,
+})
+
+const rules = computed(() => ({
+  item: {
+    maxLength: helpers.withMessage(t('validations.field_max', { count: maxCantidad }), maxLength(maxCantidad)),
+  },
+  workPlan: {
+    required: helpers.withMessage(t('validations.support_required'), required),
+  },
+}))
+
+const $v = useVuelidate(rules, form)
+
+// Methods
+
+const handlerReset = () => {
+  Object.assign(form, formClear)
+  $v.value.$reset()
+  emit('closeModal', false)
+}
+
+const handlerSubmit = () => {
+  $v.value.$touch()
+
+  if (!$v.value.$invalid) {
+    console.log("Dio clic para emitir data", form)
+    emit('cancelE7', form)
+  }
+}
+</script>
+
+<template>
+  <div>
+    <VDialog
+      v-model="showModalEdit"
+      max-width="800"
+    >
+      <DialogCloseBtn @click="emit('closeModal', false)" />
+      
+      <VImg :src="banner" cover />
+      
+      <VCard>
+        <VCardText>
+          <VForm @submit.prevent="handlerSubmit">
+            <VRow justify="center">
+              <VCol cols="6">
+                <VTextField
+                  v-model="form.item"
+                  :disabled="isLoading"
+                  :label="$t('tabSummary_e7.cancel.item')"
+                  :error-messages="$v.itemId.$errors[0]?.$message"
+                  :counter="maxCantidad"
+                  rows="2"
+                  @input="$v.itemId.$touch()"
+                />
+              </VCol>
+              <VCol cols="6">
+                <VTextField
+                  v-model="form.workPlan"
+                  :disabled="isLoading"
+                  :label="$t('tabSummary_e7.cancel.workPlain')"
+                  :error-messages="$v.workPlain.$errors[0]?.$message"
+                  :counter="maxCantidad"
+                  rows="2"
+                  @input="$v.workPlain.$touch()"
+                />
+              </VCol>
+            </VRow>
+            <VCardText class="d-flex justify-end flex-wrap gap-3">
+              <VBtn
+                variant="tonal"
+                color="secondary"
+                :disabled="isLoading"
+                @click="handlerReset"
+              >
+                {{ labelCancel }}
+              </VBtn>
+              <VBtn :loading="isLoading" class="notAllowedEmulator" :disabled="isLoading" type="submit">
+                {{ labelSubmit }}
+              </VBtn>
+            </VCardText>
+          </VForm>
+        </VCardText>
+      </VCard>
+    </VDialog>
+  </div>
+</template>

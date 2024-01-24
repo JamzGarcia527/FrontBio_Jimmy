@@ -156,6 +156,7 @@ export default {
         </tr>
       </thead>
       <tbody>
+        data {{ row }}
         <tr v-for="(row, rowIndex) in rows" :key="rowIndex">
           <td v-for="(item, colIndex) in fields" :key="colIndex" scope="col">
             <slot :name="`cell(${item.key})`" :value="row[item.key] || null" :item="row">
