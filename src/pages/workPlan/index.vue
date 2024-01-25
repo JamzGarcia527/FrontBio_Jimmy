@@ -2,96 +2,46 @@
 import Swal from "@/plugins/sweetalert2"
 import axios from '@/plugins/axios'
 import ModalWorkPlain from '@/components/workPlain/modalWorkPlain.vue'
-import ModalWorkPlainEdit from '@/components/workPlain/modalWorkPlainEdit.vue'
-import { ref } from 'vue'
+import ModalWorkPlainEdit from "@/components/workPlain/modalWorkPlainEdit.vue"
+import { reactive, ref } from 'vue'
 import { useI18n } from "vue-i18n"
-import TableLite from 'vue3-table-lite'
+import DataTable from '@/components/shared/DataTable.vue'
+import useEventBus from "@/utils/eventBus"
 
-const searchTerm = ref("") 
 const { t } = useI18n()
+const { emit: emiting } = useEventBus()
+const { bus } = useEventBus()
 const showModal = ref(false)
 const isLoading = ref(false)
+const editData = ref([])
+const items = ref([])
+const showModalEdit = ref(false)
+
 
 // modal insert
 const close = item => showModal.value = item
 const open = () => showModal.value = true
 
-const openEdit = () => showModalEdit.value = true
+
 const closeEdit = item => showModalEdit.value = item
+const openEdit = () => showModalEdit.value = true
 
-const editData = ref([])
 
-const closeModal = () => {
-  openModal.value = false
-}
-
-const dataRows = reactive([])
-for (let i = 0; i < 20; i++) {
-  dataRows.push({
-    id: i,
-    item: "item" + i,
-    workPlain: "workPlain" + i + "@example.com",
-  })
-}
-
-const  messages= {
-  pagingInfo: "Mostrando {0}-{1} de {2}",
-  pageSizeChangeLabel: "Mostrar :",
-  gotoPageLabel: "Por Página, Actual:",
-  noDataAvailable: "No hay datos para mostrar",
-}
+const fields = ref([
+  { key: "item", label: t('tabSummary.fullname') },
+  { key: "workPlanName", label: t('tabSummary.approveStatus') },
+  { key: "actions", label: t('tabSummary.approveStatus') },
+])
     
+// metho
+const onEditData = formEdit => {
+  emiting('mostraData', true)
+  showModalEdit.value = true 
 
-const table = reactive({
-  isLoading: false,
-  
-  columns: [
-    {
-      label: "ITEM",
-      field: "item",
-      width: "3%",
-      sortable: true,
-      isKey: true,
-    },
-    {
-      label: "Plan de Trabajo",
-      field: "workPlain",
-      width: "10%",
-      sortable: true,
-    },
-    {
-      label: "Acciones",
-      field: "actions",
-      width: "15%",
-      sortable: true,
-    },
-  ],
-  rows: computed(() => {
-    return dataRows.filter(
-      x =>
-        x.item.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-        x.workPlain.toLowerCase().includes(searchTerm.value.toLowerCase()),
-    )
-  }),
-      
-  totalRecordCount: computed(() => {
-    return table.rows.length
-  }),
-  sortable: {
-    order: "id",
-    sort: "asc",
-  },
-  
-})
-
-// modal edit
-const showModalEdit = ref(false)
-const closeModalEdit = item => showModalEdit.value = item
-const openModalEdit = () => showModalEdit.value = true
-
-const closeModalEdition = () => {
-  openModalEdit.value = false
+  // Abrir el modal
+  editData.value = formEdit // Asignar los datos a editData
 }
+
 
 
 const onCancelE7 = form => {
@@ -126,15 +76,28 @@ const onCancelE7 = form => {
   }).finally(() => isLoading.value = false)
 }
 
-const resend = data => {
-  // console.log("dio clic para abrir modal", data.value.id)
+const getData = async () => {
+  try {
+    await axios
+      .get("workPlan/list")
+      .then(response => {
+        items.value = response.data
 
-  showModalEdit.value = true
-
-  editData.value = data.value
-
-  console.log("editData", editData.value)
+        console.log("data list", items.value)
+      })
+  } catch (error) {
+    console.log(error)
+  }  
 }
+
+watch(() => bus.value.get('getData1'), () => {
+  console.log("en el watch")
+  getData()
+})
+
+onMounted(() => {
+  getData()
+})
 </script>
 
 <template>
@@ -152,29 +115,22 @@ const resend = data => {
     </VRow>
     <VCard>
       <VRow>
-        <VCol cols="12">
-          <TableLite
-            :is-slot-mode="1 === 1"
-            :is-loading="table.isLoading"
-            :columns="table.columns"
-            :rows="table.rows"
-            :total="table.totalRecordCount"
-            :sortable="table.sortable"
-            :is-static-mode="1===1"
-            :messages="messages"
-            @is-finished="table.isLoading = false"
-          >
-            <template #actions="data">
-              <div class="d-flex justify-center">
-                <VBtn
-                  icon="tabler-edit"
-                  variant="text"
-                  color="secondary"
-                  @click="resend(data)"
-                />
-              </div>
-            </template>
-          </TableLite>
+        <VCol cols="12" sm="12" md="12">
+          <div class="rounded border border-primary">
+            <DataTable :fields="fields" :items="items" style="width: 100%;">
+              <template #cell(actions)="{ item }">
+                <div class="d-flex justify-center">
+                  <VBtn
+                    class="text-center"
+                    icon="tabler-edit"
+                    variant="text"
+                    color="secondary"
+                    @click="onEditData(item)"
+                  />
+                </div>
+              </template>
+            </DataTable>
+          </div>
         </VCol>
       </VRow>
     </VCard>
@@ -185,19 +141,18 @@ const resend = data => {
       @cancel-e7="onCancelE7"
       @open-modal="open"
     />
-    <ModalWorkPlainEdit
-      :show-modal-edit="showModalEdit"
+    <ModalWorkPlainEdit 
+      :show-modal="showModalEdit"
+      :edit-data="editData"
       :is-loading="isLoading"
-      :edit-data="editData" 
       @close-modal="closeEdit"
-      @cancel-edit="onCancelE7"
       @open-modal="openEdit"
     />
   </div>
 </template>
 
 <route lang="yaml">
-name: "work-plain"
+name: "work-plan"
 meta:
 authRequired: true
 </route>

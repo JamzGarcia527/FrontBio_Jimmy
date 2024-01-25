@@ -759,7 +759,7 @@
     "cancel": {
       "title_card": "Anular Formulario E7",
       "item": "item",
-      "workPlain": "Plan de Trabajo",
+      "workPlanName": "Plan de Trabajo",
       "support": "Soporte",
       "success_send": "Información Guardada Exitosamente"
     }

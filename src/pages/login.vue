@@ -52,23 +52,18 @@ const signIn = async () => {
 
     const  response  = await useJwt.login(requestBody)
 
-    console.log('response',response.data.token)
     
     useJwt.setToken(response.data.token)
 
     if(response.data.accessToken == null){
       router.replace({ name: "home-page" }).then(() => {
-        console.log('enviar index')
         isLoading.value = false
 
         //  recaptcha.hide()
       })
     }
 
-    console.log(response.data.accessToken,'response')
-
     //router.push({ name: "home-page" })
-    console.log('hola ')
 
     //  isLoading.value = false
     /*const {
@@ -106,10 +101,9 @@ const signIn = async () => {
       const { message } = error.response.data
 
       // Swal.fire({ icon: "warning", text: message })
-      console.log('dhajkshdkahsd :)',message)
     } else {
       //   Swal.fire({ icon: "warning", text: "No fue posible ejecutar la acción, por favor contacte a la mesa de ayuda." })
-      console.log('hdajahsd :(')
+
     }
 
     if (!navigator.onLine) {

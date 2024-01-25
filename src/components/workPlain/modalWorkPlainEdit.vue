@@ -1,19 +1,23 @@
 <script setup>
 import banner from '@images/pages/dialog-banner-sm.webp'
-import { toRefs, reactive, computed } from 'vue'
+import axios from '@/plugins/axios'
+import { toRefs, reactive, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n' 
 import { useVuelidate } from "@vuelidate/core" 
+import useEventBus from "@/utils/eventBus"
 import { helpers, maxLength, required } from '@vuelidate/validators'
 import Swal from '@/plugins/sweetalert2'
 
+
+
 const props = defineProps({
-  showModalEdit: {
+  showModal: {
     type: Boolean,
-    default: true,
+    default: false,
   },
   labelSubmit: {
     type: String,
-    default: "Guardar Plan",
+    default: "Editar Plan",
   },
   labelCancel: {
     type: String,
@@ -25,37 +29,39 @@ const props = defineProps({
   },
   editData: {
     type: Array,
-    required: true,
+    default : Object,
   },
 })
 
-const emit = defineEmits(['closeModal', 'cancelE7', 'openModal'])
- 
-const dataEdit = ref(props.editData)
- 
-console.log("props", dataEdit)
+const emit = defineEmits(['closeModal', 'onEditData', 'openModal'])
+const { emit: emiting } = useEventBus()
+const { bus } = useEventBus()
 
-const maxCantidad = 1000
+console.log('hola que haces ')
 
-const { showModalEdit, labelSubmit, labelCancel, isLoading } = toRefs(props)
+const maxCantidad = 200
+
+const { showModal, labelSubmit, labelCancel, isLoading, editData } = toRefs(props)
+
 
 const { t } = useI18n()
 
-const form = reactive({
-  item: dataEdit,
-  workPlan: null,
+const form = ref({
+  item: null,
+  workPlanName: '',
 })
 
-const formClear = reactive({
+const formClear = ref({
   item: null,
-  workPlan: null,
+  workPlanName: null,
 })
 
 const rules = computed(() => ({
   item: {
     maxLength: helpers.withMessage(t('validations.field_max', { count: maxCantidad }), maxLength(maxCantidad)),
+    required: helpers.withMessage(t('validations.support_required'), required),
   },
-  workPlan: {
+  workPlanName: {
     required: helpers.withMessage(t('validations.support_required'), required),
   },
 }))
@@ -70,25 +76,68 @@ const handlerReset = () => {
   emit('closeModal', false)
 }
 
-const handlerSubmit = () => {
+const handlerSubmit = async () => {
+  
   $v.value.$touch()
+  if ($v.value.$invalid) return
 
-  if (!$v.value.$invalid) {
-    console.log("Dio clic para emitir data", form)
-    emit('cancelE7', form)
+
+  const requestBody = {
+    id:editData.value.id,
+    item:form.value.item,
+    workPlanName:form.value.workPlanName,
+  }
+
+  console.log('holis esta es la data ',requestBody)
+  try {
+   
+    const { data } = await axios.put("/workPlan/update", requestBody)
+  
+    emiting('getData1', true)
+
+    //await Swal.fire({ text: data, icon: "success" })
+    await Swal.fire({ text: 'Data update ok', icon: "success" })
+    handlerReset()
+
+
+    // isLoading.value = false
+
+    //location.reload()
+  } catch (error) {
+    handlerReset()
+    if (error.response && error.response.status < 500) {
+      const { message } = error.response.data
+
+      Swal.fire({ icon: 'warning', text: message })
+    }
+
+    showModal.value = true
   }
 }
+
+
+const mostraData = () => {
+
+  if(editData.value){
+    form.value.workPlanName = editData.value.workPlanName
+    form.value.item = editData.value.item
+  }
+
+}
+
+
+watch(() => bus.value.get('mostraData'), () => {
+  mostraData()
+})
 </script>
 
 <template>
   <div>
     <VDialog
-      v-model="showModalEdit"
+      v-model="showModal"
       max-width="800"
     >
       <DialogCloseBtn @click="emit('closeModal', false)" />
-      
-      <VImg :src="banner" cover />
       
       <VCard>
         <VCardText>
@@ -99,21 +148,19 @@ const handlerSubmit = () => {
                   v-model="form.item"
                   :disabled="isLoading"
                   :label="$t('tabSummary_e7.cancel.item')"
-                  :error-messages="$v.itemId.$errors[0]?.$message"
+                  :error-messages="$v.item.$errors[0]?.$message"
                   :counter="maxCantidad"
                   rows="2"
-                  @input="$v.itemId.$touch()"
                 />
               </VCol>
               <VCol cols="6">
                 <VTextField
-                  v-model="form.workPlan"
+                  v-model="form.workPlanName"
                   :disabled="isLoading"
-                  :label="$t('tabSummary_e7.cancel.workPlain')"
-                  :error-messages="$v.workPlain.$errors[0]?.$message"
+                  :label="$t('tabSummary_e7.cancel.workPlanName')"
+                  :error-messages="$v.workPlanName.$errors[0]?.$message"
                   :counter="maxCantidad"
                   rows="2"
-                  @input="$v.workPlain.$touch()"
                 />
               </VCol>
             </VRow>
