@@ -3,7 +3,7 @@ import Swal from "@/plugins/sweetalert2"
 import axios from '@/plugins/axios'
 import ModalWorkPlain from '@/components/workPlain/modalWorkPlain.vue'
 import ModalWorkPlainEdit from "@/components/workPlain/modalWorkPlainEdit.vue"
-import { reactive, ref } from 'vue'
+import { ref } from 'vue'
 import { useI18n } from "vue-i18n"
 import DataTable from '@/components/shared/DataTable.vue'
 import useEventBus from "@/utils/eventBus"
@@ -16,6 +16,7 @@ const isLoading = ref(false)
 const editData = ref([])
 const items = ref([])
 const showModalEdit = ref(false)
+const formData = ref({})
 
 
 // modal insert
@@ -26,6 +27,10 @@ const open = () => showModal.value = true
 const closeEdit = item => showModalEdit.value = item
 const openEdit = () => showModalEdit.value = true
 
+const formClear = ref({
+  item: null,
+  workPlanName: null,
+})
 
 const fields = ref([
   { key: "item", label: t('tabSummary.fullname') },
@@ -33,40 +38,38 @@ const fields = ref([
   { key: "actions", label: t('tabSummary.approveStatus') },
 ])
     
-// metho
+// methods
 const onEditData = formEdit => {
   emiting('mostraData', true)
-  showModalEdit.value = true 
-
-  // Abrir el modal
+  showModalEdit.value = true  // Abrir el modal
   editData.value = formEdit // Asignar los datos a editData
 }
 
 
 
 const onCancelE7 = form => {
-  // isLoading.value = true
+  isLoading.value = true
 
-  console.log("recibiendo en el padre", form)
+  formData.value = {
+    "item":form.item,
+    "workPlanName":form.workPlanName,
+  }
 
-  const formData = new FormData()
-
-  formData.append("item", form.item)
-  formData.append("workPlanName", form.workPlanName)
-  
-  console.log("form data", formData)
-
-
-  axios.post('/workPlan/create', formData).then(() => {
+  axios.post('/workPlan/create', formData.value).then(() => {
     showModal.value = false
     isLoading.value = false
-
+    
     Swal.fire({ 
       icon: "success", 
       text: t('tabSummary_e7.cancel.success_send'), 
     // eslint-disable-next-line promise/no-nesting
     }).then(() => {
-      router.replace({ name: 'work-plain' })
+      getData()
+      handlerReset()
+      formData.value = {
+        "item":null,
+        "workPlanName":null,
+      }
     })  
 
   }).catch(error => {
@@ -82,16 +85,17 @@ const getData = async () => {
       .get("workPlan/list")
       .then(response => {
         items.value = response.data
-
-        console.log("data list", items.value)
       })
   } catch (error) {
     console.log(error)
   }  
 }
 
+const handlerReset = () => {
+  Object.assign(formData, formClear)
+}
+
 watch(() => bus.value.get('getData1'), () => {
-  console.log("en el watch")
   getData()
 })
 

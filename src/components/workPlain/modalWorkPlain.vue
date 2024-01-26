@@ -28,6 +28,8 @@ const props = defineProps({
 
 const emit = defineEmits(['closeModal', 'cancelE7', 'openModal'])
 
+
+
 const maxCantidad = 1000
 
 const { showModal, labelSubmit, labelCancel, isLoading } = toRefs(props)
@@ -67,7 +69,6 @@ const handlerSubmit = () => {
   $v.value.$touch()
 
   if (!$v.value.$invalid) {
-    console.log("Dio clic para emitir data", form)
     emit('cancelE7', form)
   }
 }

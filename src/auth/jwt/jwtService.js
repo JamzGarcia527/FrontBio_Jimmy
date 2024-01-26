@@ -25,8 +25,6 @@ export default class JwtService {
         
         const accessToken = this.getToken()
 
-        console.log("token", accessToken)
-
         // If token is present add it to request's Authorization Header
         if (accessToken) {
           // eslint-disable-next-line no-param-reassign

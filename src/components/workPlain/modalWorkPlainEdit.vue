@@ -1,14 +1,12 @@
 <script setup>
 import banner from '@images/pages/dialog-banner-sm.webp'
 import axios from '@/plugins/axios'
-import { toRefs, reactive, computed, onMounted } from 'vue'
+import { toRefs, computed } from 'vue'
 import { useI18n } from 'vue-i18n' 
 import { useVuelidate } from "@vuelidate/core" 
 import useEventBus from "@/utils/eventBus"
 import { helpers, maxLength, required } from '@vuelidate/validators'
 import Swal from '@/plugins/sweetalert2'
-
-
 
 const props = defineProps({
   showModal: {
@@ -37,12 +35,9 @@ const emit = defineEmits(['closeModal', 'onEditData', 'openModal'])
 const { emit: emiting } = useEventBus()
 const { bus } = useEventBus()
 
-console.log('hola que haces ')
-
 const maxCantidad = 200
 
 const { showModal, labelSubmit, labelCancel, isLoading, editData } = toRefs(props)
-
 
 const { t } = useI18n()
 
@@ -88,21 +83,17 @@ const handlerSubmit = async () => {
     workPlanName:form.value.workPlanName,
   }
 
-  console.log('holis esta es la data ',requestBody)
   try {
    
     const { data } = await axios.put("/workPlan/update", requestBody)
   
     emiting('getData1', true)
 
-    //await Swal.fire({ text: data, icon: "success" })
-    await Swal.fire({ text: 'Data update ok', icon: "success" })
+    await Swal.fire({ text: 'Información Actualizada Correctamente.', icon: "success" })
     handlerReset()
 
+    isLoading.value = false
 
-    // isLoading.value = false
-
-    //location.reload()
   } catch (error) {
     handlerReset()
     if (error.response && error.response.status < 500) {
@@ -138,6 +129,8 @@ watch(() => bus.value.get('mostraData'), () => {
       max-width="800"
     >
       <DialogCloseBtn @click="emit('closeModal', false)" />
+
+      <VImg :src="banner" cover />
       
       <VCard>
         <VCardText>
