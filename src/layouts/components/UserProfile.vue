@@ -116,7 +116,7 @@ const closeEmulation = () => {
 }
 
 onMounted(() => {
-  getDaysPendingPerUpload()
+  // getDaysPendingPerUpload()
 })
 </script>
 
