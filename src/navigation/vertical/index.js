@@ -1,10 +1,12 @@
-const menu = [
-  { heading: 'Menu Local' },
+export default [
   {
-    title: 'Aprobar Formulario E6',
-    to: { name: 'preinscription-pending' },
+    title: 'Home',
+    to: { name: 'home-page' },
+    icon: { icon: 'tabler-smart-home' },
+  },
+  {
+    title: 'Plan de Trabajo',
+    to: { name: 'work-plan' },
     icon: { icon: 'tabler-file' },
   },
 ]
-
-export default menu.map(e => ({ ...e, action: 'navigation', subject: 'menu' }))

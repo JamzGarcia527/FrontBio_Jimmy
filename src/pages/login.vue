@@ -53,8 +53,11 @@ const signIn = async () => {
     const  response  = await useJwt.login(requestBody)
 
     
-    useJwt.setToken(response.data.token)
+    useJwt.setToken(response.data.token) 
+    console.log( ...response.data.listMenu)
 
+    // userConfig.setUserConfig({ ...response.data.listMenu })
+    
     if(response.data.accessToken == null){
       router.replace({ name: "home-page" }).then(() => {
         isLoading.value = false

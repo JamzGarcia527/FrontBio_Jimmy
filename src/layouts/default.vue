@@ -16,6 +16,7 @@ switchToVerticalNavOnLtOverlayNavBreakpoint(windowWidth)
 const { layoutAttrs, injectSkinClasses } = useSkins()
 
 injectSkinClasses()
+console.log(layoutAttrs)
 </script>
 
 <template>

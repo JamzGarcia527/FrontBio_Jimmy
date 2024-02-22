@@ -10,7 +10,7 @@ const initState = () => ({
     changePassword: false,
   },
   permissions: [],
-  menu: [],
+  listMenu: [],
 }) 
 
 export const useUserConfigStore = defineStore('userconfig', {
@@ -19,7 +19,6 @@ export const useUserConfigStore = defineStore('userconfig', {
     fullName: state => `${state.userData.firstName} ${state.userData.firstSurname}`,
     role: state => state.userData.role,
     changePassword: state => state.userData.changePassword,
-    isEmulated: state => state.userData.emulated,
     isCommittee: state => {
       const { groupingPolitical = null } = state.userData
       if (!groupingPolitical) return false 
@@ -41,6 +40,8 @@ export const useUserConfigStore = defineStore('userconfig', {
   },
   actions: {
     setUserConfig(payload) {
+
+      console.log("hola payload", payload)
       
       const { roleDetail, ...userData } = payload
       const { permissions = [], menu = [], code: roleCode, name: role } = roleDetail

@@ -1,20 +1,21 @@
 <script setup>
 import banner from '@images/pages/dialog-banner-sm.webp'
-import { toRefs, reactive, computed } from 'vue'
+import axios from '@/plugins/axios'
+import { toRefs, computed } from 'vue'
 import { useI18n } from 'vue-i18n' 
 import { useVuelidate } from "@vuelidate/core" 
+import useEventBus from "@/utils/eventBus"
 import { helpers, maxLength, required } from '@vuelidate/validators'
 import Swal from '@/plugins/sweetalert2'
-import axios from '@/plugins/axios'
 
 const props = defineProps({
   showModal: {
     type: Boolean,
-    default: true,
+    default: false,
   },
   labelSubmit: {
     type: String,
-    default: "Guardar Plan",
+    default: "Editar Plan",
   },
   labelCancel: {
     type: String,
@@ -24,38 +25,38 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  editData: {
+    type: Array,
+    default : Object,
+  },
 })
 
-const emit = defineEmits(['closeModal', 'cancelE7', 'openModal'])
+const emit = defineEmits(['closeModal', 'onEditData', 'openModal'])
+const { emit: emiting } = useEventBus()
+const { bus } = useEventBus()
 
-const itemsListCompany = ref([])
+const maxCantidad = 200
 
-const maxCantidad = 1000
-
-const { showModal, labelSubmit, labelCancel, isLoading } = toRefs(props)
+const { showModal, labelSubmit, labelCancel, isLoading, editData } = toRefs(props)
 
 const { t } = useI18n()
 
-const form = reactive({
+const form = ref({
   item: null,
-  workPlanName: null,
-  companyId: null,
+  workPlanName: '',
 })
 
-const formClear = reactive({
+const formClear = ref({
   item: null,
   workPlanName: null,
-  companyId: null,
 })
 
 const rules = computed(() => ({
   item: {
     maxLength: helpers.withMessage(t('validations.field_max', { count: maxCantidad }), maxLength(maxCantidad)),
-  },
-  workPlanName: {
     required: helpers.withMessage(t('validations.support_required'), required),
   },
-  companyId: {
+  workPlanName: {
     required: helpers.withMessage(t('validations.support_required'), required),
   },
 }))
@@ -70,44 +71,54 @@ const handlerReset = () => {
   emit('closeModal', false)
 }
 
-const handlerSubmit = () => {
-
-  console.log("form", form)
-
+const handlerSubmit = async () => {
+  
   $v.value.$touch()
+  if ($v.value.$invalid) return
 
-  if (!$v.value.$invalid) {
-    emit('cancelE7', form)
+
+  const requestBody = {
+    id:editData.value.id,
+    item:form.value.item,
+    workPlanName:form.value.workPlanName,
+  }
+
+  try {
+   
+    const { data } = await axios.put("/workPlan/update", requestBody)
+  
+    emiting('getData1', true)
+
+    await Swal.fire({ text: 'Información Actualizada Correctamente.', icon: "success" })
+    handlerReset()
+
+    isLoading.value = false
+
+  } catch (error) {
+    handlerReset()
+    if (error.response && error.response.status < 500) {
+      const { message } = error.response.data
+
+      Swal.fire({ icon: 'warning', text: message })
+    }
+
+    showModal.value = true
   }
 }
 
-// get data work plan 
-const getDataListCompany = async () => {
-  try {
-    await axios
-      .get("company/list")
-      .then(response => {
-        itemsListCompany.value = response.data
-        console.log("getDataListCompany", itemsListCompany.value)
-      })
-  } catch (error) {
-    console.log(error)
-  }  
+
+const mostraData = () => {
+
+  if(editData.value){
+    form.value.workPlanName = editData.value.workPlanName
+    form.value.item = editData.value.item
+  }
+
 }
 
-const addOptionDefault = array => {
-  return [ { title: 'Seleccione una opción', value: -1 }, ...array]
-}
 
-const companyList = computed(() => {
-
-  const array = itemsListCompany.value.map(e => ({ title: e.companyName, value: e.id }))
-
-  return addOptionDefault(array)
-})
-
-onMounted(() => {
-  getDataListCompany()
+watch(() => bus.value.get('mostraData'), () => {
+  mostraData()
 })
 </script>
 
@@ -118,7 +129,7 @@ onMounted(() => {
       max-width="800"
     >
       <DialogCloseBtn @click="emit('closeModal', false)" />
-      
+
       <VImg :src="banner" cover />
       
       <VCard>
@@ -133,7 +144,6 @@ onMounted(() => {
                   :error-messages="$v.item.$errors[0]?.$message"
                   :counter="maxCantidad"
                   rows="2"
-                  @input="$v.item.$touch()"
                 />
               </VCol>
               <VCol cols="6">
@@ -144,20 +154,6 @@ onMounted(() => {
                   :error-messages="$v.workPlanName.$errors[0]?.$message"
                   :counter="maxCantidad"
                   rows="2"
-                  @input="$v.workPlanName.$touch()"
-                />
-              </VCol>
-              <VCol
-                cols="6"
-                md="6"
-              >
-                <VSelect
-                  v-model="form.companyId"
-                  :items="companyList"
-                  prepend-inner-icon="tabler-user-search"
-                  :label="t('work_plan.selectCompany')"
-                  :error-messages="$v.companyId.$errors[0]?.$message"
-                  class="required"
                 />
               </VCol>
             </VRow>

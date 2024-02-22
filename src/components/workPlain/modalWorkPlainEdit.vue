@@ -41,14 +41,18 @@ const { showModal, labelSubmit, labelCancel, isLoading, editData } = toRefs(prop
 
 const { t } = useI18n()
 
+const itemsListCompany = ref([])
+
 const form = ref({
   item: null,
   workPlanName: '',
+  companyName: '',
 })
 
 const formClear = ref({
   item: null,
   workPlanName: null,
+  companyName: null,
 })
 
 const rules = computed(() => ({
@@ -57,6 +61,9 @@ const rules = computed(() => ({
     required: helpers.withMessage(t('validations.support_required'), required),
   },
   workPlanName: {
+    required: helpers.withMessage(t('validations.support_required'), required),
+  },
+  companyName: {
     required: helpers.withMessage(t('validations.support_required'), required),
   },
 }))
@@ -79,6 +86,7 @@ const handlerSubmit = async () => {
 
   const requestBody = {
     id:editData.value.id,
+    companyId:editData.value.companyId,
     item:form.value.item,
     workPlanName:form.value.workPlanName,
   }
@@ -109,16 +117,49 @@ const handlerSubmit = async () => {
 
 const mostraData = () => {
 
+  console.log("editData.value in children", editData.value)
+
   if(editData.value){
     form.value.workPlanName = editData.value.workPlanName
     form.value.item = editData.value.item
+    form.value.companyId = editData.value.companyId
+    form.value.companyName = editData.value.companyName
   }
 
 }
 
+const addOptionDefault = array => {
+  return [ { title: 'Seleccione una opción', value: -1 }, ...array]
+}
+
+const companyList = computed(() => {
+
+  const array = itemsListCompany.value.map(e => ({ title: e.companyName, value: e.companyId }))
+
+  return addOptionDefault(array)
+})
+
 
 watch(() => bus.value.get('mostraData'), () => {
   mostraData()
+})
+
+// get data work list company 
+const getDataListCompany = async () => {
+  try {
+    await axios
+      .get("company/list")
+      .then(response => {
+        itemsListCompany.value = response.data
+        console.log("getDataListCompany", itemsListCompany.value)
+      })
+  } catch (error) {
+    console.log(error)
+  }  
+}
+
+onMounted(() => {
+  getDataListCompany()
 })
 </script>
 
@@ -154,6 +195,18 @@ watch(() => bus.value.get('mostraData'), () => {
                   :error-messages="$v.workPlanName.$errors[0]?.$message"
                   :counter="maxCantidad"
                   rows="2"
+                />
+              </VCol>
+              <VCol
+                cols="6"
+                md="6"
+              >
+                <VSelect
+                  v-model="form.companyName"
+                  :items="companyList"
+                  prepend-inner-icon="tabler-user-search"
+                  :label="t('work_plan.selectCompany')"
+                  disabled
                 />
               </VCol>
             </VRow>

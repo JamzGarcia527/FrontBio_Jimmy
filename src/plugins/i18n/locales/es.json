@@ -224,11 +224,13 @@
       "edit": "Editar usuario",
       "users": "Administrar Usuarios",
       "create_user": "Crear usuario",
-      "create_work_plain":"Crar Plan de Trabajo",
+      "create_work_plain":"Crear Plan de Trabajo",
+      "create_work_plain_task":"Crear Listado",
       "create_user_aux": "Crear usuario auxiliar",
       "upload_user_file": "Cargar Archivo de Usuarios",
       "differential_focus": "Administrar Campo Enfoque Diferencial",
-      "work_plain":"Plan de Trabajo"
+      "work_plain":"Plan de Trabajo",
+      "work_plain_list":"Plan de Trabajo Listado"
     },
     "upload": {
       "title_card": "Cargue Masivo de Usuarios",
@@ -594,6 +596,9 @@
       }
     }
   },
+  "work_plan": {
+    "selectCompany": "Seleccione una empresa"
+  },
   "differential_focus": {
     "title_card": "Listado de Enfoque Diferencial",
     "edit_differential_focus": "Editar Enfoque Diferencial",
@@ -761,8 +766,17 @@
       "item": "item",
       "workPlanName": "Plan de Trabajo",
       "support": "Soporte",
-      "success_send": "Información Guardada Exitosamente"
+      "success_send": "Información Guardada Exitosamente",
+      "activityName":"Nombre de la actividad"
     }
+  },
+  "workPlan": {
+    "item": "item",
+    "workPlanName": "Plan de Trabajo",
+    "success_send": "Información Guardada Exitosamente",
+    "companyName":"Nombre de la Empresa",
+    "activityName":"Nombre de la Actividad",
+    "actions":"Acciones"
   },
   "upload_logo": {
     "select_button": "Examinar",
@@ -1995,5 +2009,91 @@
    "candidate_generationList_report": {
     "title": "Generación Archivo de Armado de Candidatos"
     
+  },
+  "companies": {
+    "idNumber": "ID Empresa",
+    "serial": "#",
+    "msj_user_save": "Empresa creada correctamente",
+    "fullname": "Nombre de Empresa",
+    "idCompany":"Código de Empresa",
+    "companyNit": "Documento de Identidad",
+    "companyType": "Tipo de Sociedad",
+    "levelRiskCompany": "Nivel de Riesgo",
+    "companyName": "Nombre de la Empresa",
+    "firstsurname": "Primer apellido",
+    "secondsurname": "Segundo apellido",
+    "username": "Código de Empresa",
+    "user_rol": "Perfil de Empresa",
+    "phone": "Número de celular",
+    "email": "Correo electrónico",
+    "indicative": "Indicativo",
+    "localphone": "Teléfono",
+    "confirm_email": "Confirmar Correo Electrónico",
+    "department": "Departamento Inscripción",
+    "department_filter": "Departamento",
+    "municipality_filter": "Municipio",
+    "commune_filter": "Comuna/Localidad/Corregimiento",
+    "groupingPoliticalTypes": "Tipo de Agrupación Política",
+    "municipalities": "Municipio Inscripción",
+    "groupingPoliticals": "Nombre de la Agrupación Política",
+    "status": "Activo",
+    "instatus": "Inactivo",
+    "status_header": "Estado",
+    "actions": "Acciones",
+    "change_password": "Restablecimiento de contraseña",
+    "inactive": "Inactivo",
+    "create_user": "Crear usuario",
+    "edit_user": "Editar usuario",
+    "cancel": "Cancelar",
+    "back": "Volver",
+    "sending_data": "Enviando información",
+    "code_user": "Código",
+    "no_change_password": "No",
+    "changed_password": "Si",
+    "btn_reset_password": "Restablecer contraseña",
+    "are_you_sure": "¿Estás seguro?",
+    "text_swal": "De restablecer la contraseña del usuario",
+    "confirm_button_text": "Si, restablecer contraseña",
+    "title_confirmed_change_password": "Bien hecho!",
+    "text_confirmed_change_password": "Contraseña restablecida correctamente, por favor revisar correo electrónico",
+    "btn_search": "Consultar",
+    "btn_export": "Exportar Excel",
+    "btn_clear": "Limpiar",
+    "divipolePermissions": "Permisos de divipole",
+    "breadcrumbs": {
+      "title": "Módulo Administración",
+      "edit": "Editar Empresas",
+      "users": "Administrar Empresas",
+      "createCompanies": "Crear Empresa",
+      "create_work_plain":"Crear Plan de Trabajo",
+      "create_work_plain_task":"Crear Listado",
+      "create_user_aux": "Crear usuario auxiliar",
+      "upload_user_file": "Cargar Archivo de Usuarios",
+      "differential_focus": "Administrar Campo Enfoque Diferencial",
+      "work_plain":"Plan de Trabajo",
+      "work_plain_list":"Plan de Trabajo Listado"
+    },
+    "upload": {
+      "title_card": "Cargue Masivo de Usuarios",
+      "title_documentation": "Instructivo y Plantilla",
+      "label_download_documentation": "Ayuda para cargue masivo",
+      "label_download_template": "Descargue la plantilla de ejemplo",
+      "title_upload_file": "Cargar Archivo",
+      "title_import_response": "Resultados",
+      "file_max_size": "Tamaño máximo de archivo {limit}",
+      "file_types": "Tipo de archivo soportado {type}",
+      "unselectfile": "No cuenta con Archivos cargados",
+      "selectfile": "Examinar",
+      "upload_new_file": "Cargar nuevo archivo",
+      "total_records": "Total",
+      "total_success": "Correctos",
+      "total_warning": "Alertas",
+      "total_error": "Errores"
+    },
+    "listUserAux": {
+      "item": "Item",
+      "nameWorkPlain": "Plan de Trabajo",
+      "actions": "Acciones"
+    }
   }
 }

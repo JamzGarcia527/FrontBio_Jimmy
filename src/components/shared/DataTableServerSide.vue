@@ -20,7 +20,7 @@ export default {
     },
     emptyText: {
       type: String,
-      default: 'No hay registros',
+      default: 'No hay información ',
     },
     tableClass: {
       type: String,
@@ -70,14 +70,23 @@ export default {
     const paginationData = computed(() => `Registros de ${startRow.value} hasta ${endRow.value} de ${pageable.value.totalElements}`)
 
     const getData = async payload => {
+      console.log("entro a get data")
       isLoading.value = true
 
       const { params: paramsProp, endpoint, keys } = props
+      
+      console.log("props in dataTable", props)
+
       const customProps = Object.entries(paramsProp).reduce((a,[k,v]) => (v == null || String(v).trim() == '' || v === -1 ? a : (a[k]=v, a)), {})
       const params = { ...customProps, ...payload }
 
       try {
+        console.log("entro al try cathc")
+
         const { data } = await axios.get(endpoint, { params })
+
+        console.log("data del endpoint", data)
+
         const { content, ...result } = data
 
         if (props.showEmptyMessage && Array.isArray(content) && content.length === 0) {
@@ -108,11 +117,11 @@ export default {
     } 
 
     watch(props, () => {
-      getData({ page: 0 })
+      getData({ page: 1 })
     })
 
     onMounted(() => {
-      getData({ page: 0 })
+      getData({ page: 1 })
     })
 
     return {
@@ -156,7 +165,6 @@ export default {
         </tr>
       </thead>
       <tbody>
-        data {{ row }}
         <tr v-for="(row, rowIndex) in rows" :key="rowIndex">
           <td v-for="(item, colIndex) in fields" :key="colIndex" scope="col">
             <slot :name="`cell(${item.key})`" :value="row[item.key] || null" :item="row">

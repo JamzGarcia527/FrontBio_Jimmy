@@ -502,5 +502,5 @@ onMounted(() => {
 <route lang="yaml">
 name: "user-create"
 meta:
-  authRequired: true
+authRequired: true
 </route>

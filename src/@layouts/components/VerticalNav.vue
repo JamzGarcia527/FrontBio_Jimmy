@@ -1,6 +1,4 @@
 <script setup>
-import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
-import { VNodeRenderer } from './VNodeRenderer'
 import {
   injectionKeyIsVerticalNavHovered,
   useLayouts,
@@ -11,9 +9,8 @@ import {
   VerticalNavSectionTitle,
 } from '@layouts/components'
 import { config } from '@layouts/config'
-
-
-import logoElecciones from '@/assets/images/img/logo-elecciones-2023.webp'
+import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
+import { VNodeRenderer } from './VNodeRenderer'
 
 const props = defineProps({
   tag: {
@@ -95,15 +92,18 @@ const handleNavScroll = evt => {
       <slot name="nav-header">
         <RouterLink
           to="/"
-          class="app-logo d-flex align-center gap-x-3 app-title-wrapper h-100"
+          class="app-logo d-flex align-center gap-x-3 app-title-wrapper"
         >
-          <VNodeRenderer v-show="hideTitleAndIcon" :nodes="config.app.logo" />
-
           <Transition name="vertical-nav-app-title">
-            <VImg v-show="!hideTitleAndIcon" :src="logoElecciones" width="150" height="180" />
+            <h1
+              v-show="!hideTitleAndIcon"
+              class="app-title font-weight-bold leading-normal text-xl"
+            >
+              {{ config.app.title }}
+            </h1>
           </Transition>
         </RouterLink>
-        <!-- 👉 Vertical nav actions -->
+        <!-- 👉 Vertical nav actions asdasdasd -->
         <!-- Show toggle collapsible in >md and close button in <md -->
         <template v-if="!isLessThanOverlayNavBreakpoint(windowWidth)">
           <Component
@@ -131,7 +131,9 @@ const handleNavScroll = evt => {
         </template>
       </slot>
     </div>
-    
+    <slot name="before-nav-items">
+      <div class="vertical-nav-items-shadow" />
+    </slot>
     <slot
       name="nav-items"
       :update-is-vertical-nav-scrolled="updateIsVerticalNavScrolled"
@@ -143,7 +145,6 @@ const handleNavScroll = evt => {
         :options="{ wheelPropagation: false }"
         @ps-scroll-y="handleNavScroll"
       >
-        <div class="vertical-nav-items-shadow" />
         <Component
           :is="resolveNavItemComponent(item)"
           v-for="(item, index) in navItems"
@@ -158,10 +159,6 @@ const handleNavScroll = evt => {
 <style lang="scss">
 @use "@configured-variables" as variables;
 @use "@layouts/styles/mixins";
-
-.vertical-nav-items-shadow {
-  inset-block-start: 0 !important;
-}
 
 // 👉 Vertical Nav
 .layout-vertical-nav {

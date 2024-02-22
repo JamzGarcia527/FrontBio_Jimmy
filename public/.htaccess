@@ -7,7 +7,7 @@ RewriteEngine On
 
 #Options All -Indexes
 
-Header set Access-Control-Allow-Origin "http://localhost:8080/"
+Header set Access-Control-Allow-Origin "http://localhost:10.10.33.30/"
 #Header set X-Content-Type-Options "nosniff"
 #Access-Control-Allow-Credentials = true
 
